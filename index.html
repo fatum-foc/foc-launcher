@@ -4,48 +4,169 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#030303">
-  <meta name="description" content="Официальная страница Fatum of Creation — скачать лаунчер и присоединиться к Discord.">
+  <meta name="description" content="Официальная страница Fatum of Creation — новости проекта, лаунчер и Discord.">
   <title>Fatum of Creation</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="favicon.png">
   <style>
-    :root { color-scheme: dark; --red:#d82a22; --silver:#e6e0db; --black:#030303; }
-    * { box-sizing: border-box; }
-    html, body { min-height: 100%; margin: 0; background: var(--black); }
-    body { color: var(--silver); font-family: Georgia, "Times New Roman", serif; }
-    .landing { position:relative; isolation:isolate; min-height:100vh; min-height:100svh; overflow:hidden; background:#030303 url("foc-background.webp") center/cover no-repeat; }
-    .landing::before { position:absolute; z-index:-1; inset:0; content:""; background:linear-gradient(180deg,rgba(0,0,0,.06) 56%,rgba(0,0,0,.92) 100%),radial-gradient(circle at 68% 60%,transparent 20%,rgba(0,0,0,.18) 100%); }
-    .landing::after { position:absolute; z-index:-1; right:18%; bottom:7%; left:42%; height:1px; content:""; background:linear-gradient(90deg,transparent,#ff392d,transparent); box-shadow:0 0 18px 3px rgba(237,40,29,.5); }
+    :root { color-scheme:dark; --red:#d82a22; --silver:#e6e0db; --black:#030303; }
+    * { box-sizing:border-box; }
+    html { min-height:100%; background:var(--black); }
+    body { min-height:100%; margin:0; color:var(--silver); font-family:Georgia,"Times New Roman",serif; }
+    .landing { position:relative; isolation:isolate; min-height:100vh; min-height:100svh; overflow:hidden; background:#030303 url("foc-background.webp") center/cover fixed no-repeat; }
+    .landing::before { position:fixed; z-index:-1; inset:0; content:""; background:linear-gradient(180deg,rgba(0,0,0,.28),rgba(0,0,0,.08) 48%,rgba(0,0,0,.88)),radial-gradient(circle at 68% 55%,transparent 15%,rgba(0,0,0,.3) 100%); }
+    .landing::after { position:fixed; z-index:-1; right:18%; bottom:7%; left:42%; height:1px; content:""; background:linear-gradient(90deg,transparent,#ff392d,transparent); box-shadow:0 0 18px 3px rgba(237,40,29,.5); }
     .mobile-title { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-    .actions { position:absolute; z-index:1; top:50%; left:50%; display:flex; gap:1rem; transform:translate(-50%,-50%); }
-    .action { position:relative; min-width:15.5rem; padding:1rem 1.8rem; overflow:hidden; border:1px solid rgba(221,214,207,.42); color:#f7f1ec; font:700 .82rem/1.25 Arial,Helvetica,sans-serif; letter-spacing:.15em; text-align:center; text-decoration:none; text-transform:uppercase; box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 14px 35px rgba(0,0,0,.5); transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease; }
+    .actions { position:relative; z-index:2; display:flex; width:min(68rem,calc(100% - 2.5rem)); margin:0 auto; padding-top:clamp(1.25rem,4vh,3rem); gap:1rem; justify-content:center; }
+    .action { position:relative; min-width:min(18rem,40vw); padding:1rem 1.8rem; overflow:hidden; border:1px solid rgba(221,214,207,.42); color:#f7f1ec; font:700 .82rem/1.25 Arial,Helvetica,sans-serif; letter-spacing:.15em; text-align:center; text-decoration:none; text-transform:uppercase; box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 14px 35px rgba(0,0,0,.5); transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease; }
     .action::before { position:absolute; top:0; bottom:0; left:-60%; width:34%; content:""; background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent); transform:skewX(-18deg); transition:left 380ms ease; }
     .action-primary { border-color:rgba(255,91,79,.76); background:linear-gradient(180deg,rgba(153,27,21,.96),rgba(67,8,6,.98)); box-shadow:inset 0 1px 0 rgba(255,220,215,.19),0 0 24px rgba(216,42,34,.3),0 14px 35px rgba(0,0,0,.55); }
     .action-secondary { background:linear-gradient(180deg,rgba(54,55,61,.96),rgba(19,19,22,.98)); }
     .action:hover { border-color:rgba(255,226,220,.92); box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 0 30px rgba(239,52,41,.42),0 16px 38px rgba(0,0,0,.62); transform:translateY(-2px); }
     .action:hover::before { left:126%; }
-    .action:focus-visible { outline:2px solid #fff; outline-offset:4px; }
+    .action:focus-visible,.news-link:focus-visible { outline:2px solid #fff; outline-offset:4px; }
     .action:active { transform:translateY(1px); }
+    .news-shell { position:relative; z-index:1; width:min(64rem,calc(100% - 2.5rem)); height:clamp(28rem,72vh,48rem); margin:clamp(2.4rem,7vh,5rem) auto 3rem; border:1px solid rgba(221,53,44,.72); background:linear-gradient(150deg,rgba(9,9,11,.91),rgba(16,10,11,.82)); box-shadow:0 0 0 1px rgba(255,255,255,.05) inset,0 0 35px rgba(204,27,20,.22),0 30px 80px rgba(0,0,0,.7); backdrop-filter:blur(8px); }
+    .news-header { position:relative; padding:1.25rem 1.5rem 1rem; border-bottom:1px solid rgba(219,52,43,.42); text-align:center; }
+    .news-header::after { position:absolute; right:25%; bottom:-1px; left:25%; height:1px; content:""; background:#ff3c31; box-shadow:0 0 12px #e32c23; }
+    .news-title { margin:0; color:#f1ebe7; font-size:clamp(1.6rem,4vw,2.35rem); font-weight:500; letter-spacing:.12em; text-shadow:0 0 14px rgba(233,50,40,.75); text-transform:uppercase; }
+    .news-status { min-height:1.2em; margin:.35rem 0 0; color:#bdb4ae; font:400 .72rem/1.4 Arial,Helvetica,sans-serif; letter-spacing:.08em; }
+    .news-list { height:calc(100% - 5.4rem); padding:1rem 1.15rem 1.5rem; overflow:auto; scrollbar-color:#92231d rgba(0,0,0,.36); scrollbar-width:thin; }
+    .news-list:focus-visible { outline:2px solid #fff; outline-offset:-4px; }
+    .news-card { padding:1.2rem; border:1px solid rgba(218,206,198,.18); background:linear-gradient(135deg,rgba(29,29,32,.92),rgba(12,12,14,.92)); box-shadow:0 10px 28px rgba(0,0,0,.36); }
+    .news-card + .news-card { margin-top:1rem; }
+    .news-meta { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:.7rem; color:#b8ada6; font:700 .7rem/1.4 Arial,Helvetica,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+    .news-author { color:#ef6258; }
+    .news-content,.news-embed { margin:0; color:#eee9e5; font:400 .98rem/1.58 Arial,Helvetica,sans-serif; white-space:pre-wrap; overflow-wrap:anywhere; }
+    .news-embed { margin-top:.8rem; padding:.85rem 1rem; border-left:2px solid #c83229; background:rgba(0,0,0,.28); }
+    .news-embed strong { display:block; margin-bottom:.25rem; color:#fff; }
+    .news-images { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; margin-top:1rem; }
+    .news-image { display:block; width:100%; max-height:30rem; border:1px solid rgba(255,255,255,.12); background:#050505; object-fit:contain; }
+    .news-images > :only-child { grid-column:1/-1; }
+    .news-link { display:inline-block; margin-top:1rem; color:#ff766d; font:700 .72rem/1.4 Arial,Helvetica,sans-serif; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; }
+    .news-link:hover { color:#fff; text-decoration:underline; }
+    .news-empty { display:grid; min-height:16rem; place-items:center; padding:2rem; color:#c7bcb6; font:400 1rem/1.6 Arial,Helvetica,sans-serif; text-align:center; }
     @media (max-width:760px) {
-      .landing { background-position:66% center; }
-      .landing::before { background:linear-gradient(180deg,rgba(0,0,0,.38),rgba(0,0,0,.28) 52%,rgba(0,0,0,.96) 100%),radial-gradient(circle at center,transparent,rgba(0,0,0,.42)); }
-      .landing::after { right:10%; bottom:27%; left:10%; }
-      .mobile-title { top:8vh; right:1.25rem; left:1.25rem; width:auto; height:auto; margin:0; overflow:visible; clip:auto; color:#ece8e4; font-size:clamp(2.7rem,14vw,4.4rem); font-weight:500; letter-spacing:.02em; line-height:.76; text-align:center; text-shadow:0 1px 0 #fff,0 3px 0 #4c0b08,0 0 20px rgba(255,35,24,.95),0 10px 28px #000; text-transform:uppercase; }
-      .mobile-title span,.mobile-title small { display:block; }
-      .mobile-title small { margin:.35em 0 .28em; color:#f8eee9; font:500 .26em/1 Arial,Helvetica,sans-serif; letter-spacing:.34em; }
-      .actions { width:calc(100% - 2.5rem); max-width:26rem; flex-direction:column; }
-      .action { width:100%; min-width:0; padding:1.05rem 1.2rem; }
+      .landing { overflow:auto; background-attachment:scroll; background-position:66% center; }
+      .landing::before { background:linear-gradient(180deg,rgba(0,0,0,.48),rgba(0,0,0,.3) 52%,rgba(0,0,0,.96)),radial-gradient(circle at center,transparent,rgba(0,0,0,.5)); }
+      .landing::after { right:10%; bottom:8%; left:10%; }
+      .actions { width:calc(100% - 1.5rem); padding-top:.75rem; gap:.55rem; }
+      .action { min-width:0; flex:1; padding:.85rem .5rem; font-size:.68rem; letter-spacing:.08em; }
+      .news-shell { width:calc(100% - 1.5rem); height:calc(100svh - 6.5rem); min-height:30rem; margin:1.25rem auto 1.5rem; backdrop-filter:blur(5px); }
+      .news-header { padding:1rem .8rem .8rem; }
+      .news-list { height:calc(100% - 4.8rem); padding:.75rem; }
+      .news-card { padding:1rem; }
+      .news-meta { align-items:flex-start; flex-direction:column; gap:.15rem; }
+      .news-images { grid-template-columns:1fr; }
+      .news-images > * { grid-column:1; }
     }
+    @media (max-width:380px) { .action { font-size:.61rem; } }
     @media (prefers-reduced-motion:reduce) { .action,.action::before { transition:none; } }
+    @supports not (backdrop-filter:blur(1px)) { .news-shell { background:rgba(10,9,10,.96); } }
   </style>
 </head>
 <body>
   <main class="landing">
-    <h1 class="mobile-title" aria-label="Fatum of Creation"><span>Fatum</span><small>of</small><span>Creation</span></h1>
+    <h1 class="mobile-title">Fatum of Creation</h1>
     <nav class="actions" aria-label="Основные ссылки">
       <a class="action action-primary" href="https://github.com/fatum-foc/foc-launcher/releases/latest/download/FoC-Launcher-Setup.exe">Скачать лаунчер</a>
-      <a class="action action-secondary" href="https://discord.gg/WMMbjusZ5" target="_blank" rel="noreferrer">Discord</a>
+      <a class="action action-secondary" href="https://discord.gg/WMMbjusZ5" target="_blank" rel="noopener noreferrer">Discord</a>
     </nav>
+    <section class="news-shell" aria-labelledby="news-title">
+      <header class="news-header">
+        <h2 class="news-title" id="news-title">Новости</h2>
+        <p class="news-status" id="news-status" aria-live="polite">Загрузка обновлений…</p>
+      </header>
+      <div class="news-list" id="news-list" tabindex="0" aria-busy="true"></div>
+    </section>
   </main>
+  <script>
+    (() => {
+      const list = document.getElementById('news-list');
+      const status = document.getElementById('news-status');
+      const formatter = new Intl.DateTimeFormat('ru-RU', { day:'2-digit', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', timeZone:'Europe/Moscow' });
+      const addText = (parent, className, text) => {
+        if (!text) return;
+        const node = document.createElement('p');
+        node.className = className;
+        node.textContent = text;
+        parent.append(node);
+      };
+      const renderPost = post => {
+        const article = document.createElement('article');
+        article.className = 'news-card';
+        const meta = document.createElement('div');
+        meta.className = 'news-meta';
+        const author = document.createElement('span');
+        author.className = 'news-author';
+        author.textContent = post.authorName || 'Fatum of Creation';
+        const time = document.createElement('time');
+        const date = new Date(post.publishedAt);
+        time.dateTime = Number.isNaN(date.valueOf()) ? '' : date.toISOString();
+        time.textContent = Number.isNaN(date.valueOf()) ? '' : formatter.format(date) + ' МСК';
+        meta.append(author, time);
+        article.append(meta);
+        addText(article, 'news-content', post.content);
+        (post.embeds || []).forEach(embed => {
+          if (!embed.title && !embed.description) return;
+          const box = document.createElement('div');
+          box.className = 'news-embed';
+          if (embed.title) {
+            const title = document.createElement('strong');
+            title.textContent = embed.title;
+            box.append(title);
+          }
+          if (embed.description) box.append(document.createTextNode(embed.description));
+          article.append(box);
+        });
+        if (post.images && post.images.length) {
+          const images = document.createElement('div');
+          images.className = 'news-images';
+          post.images.forEach(image => {
+            const img = document.createElement('img');
+            img.className = 'news-image';
+            img.src = image.src;
+            img.alt = image.alt || 'Иллюстрация к новости';
+            img.loading = 'lazy';
+            img.decoding = 'async';
+            images.append(img);
+          });
+          article.append(images);
+        }
+        if (post.discordUrl) {
+          const link = document.createElement('a');
+          link.className = 'news-link';
+          link.href = post.discordUrl;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = 'Открыть в Discord →';
+          article.append(link);
+        }
+        return article;
+      };
+      const showError = () => {
+        list.replaceChildren();
+        const empty = document.createElement('div');
+        empty.className = 'news-empty';
+        empty.textContent = 'Новости временно недоступны. Все обновления остаются в Discord.';
+        list.append(empty);
+        status.textContent = 'Не удалось загрузить ленту';
+        list.setAttribute('aria-busy', 'false');
+      };
+      fetch('./news.json', { cache:'no-store' })
+        .then(response => {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.json();
+        })
+        .then(feed => {
+          if (!feed || !Array.isArray(feed.posts) || !feed.posts.length) throw new Error('Empty feed');
+          list.replaceChildren(...feed.posts.map(renderPost));
+          const updated = new Date(feed.updatedAt);
+          status.textContent = Number.isNaN(updated.valueOf()) ? 'Обновления Discord' : 'Обновлено ' + formatter.format(updated) + ' МСК';
+          list.setAttribute('aria-busy', 'false');
+        })
+        .catch(showError);
+    })();
+  </script>
 </body>
 </html>

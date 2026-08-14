@@ -1,0 +1,46 @@
+name: Sync Discord news
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-discord-news
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout website branch
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Verify and cache Discord news
+        run: node scripts/sync-news.mjs
+
+      - name: Publish changed news
+        shell: bash
+        run: |
+          if git diff --quiet -- news.json news-media; then
+            echo "News is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news.json news-media
+          git commit -m "Update Discord news"
+          git push origin HEAD:gh-pages

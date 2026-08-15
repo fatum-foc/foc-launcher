@@ -26,6 +26,8 @@
     .action:hover::before { left:126%; }
     .action:focus-visible,.news-link:focus-visible { outline:2px solid #fff; outline-offset:4px; }
     .action:active { transform:translateY(1px); }
+    .release-status { position:relative; z-index:2; width:min(48rem,calc(100% - 2.5rem)); margin:.85rem auto 0; padding:.62rem 1rem; border:1px solid rgba(221,53,44,.48); background:rgba(8,7,8,.78); color:#d8d0ca; font:400 .76rem/1.45 Arial,Helvetica,sans-serif; letter-spacing:.045em; text-align:center; box-shadow:0 8px 24px rgba(0,0,0,.34); backdrop-filter:blur(6px); }
+    .release-status strong { color:#ff766d; font-weight:700; }
     .news-shell { position:relative; z-index:1; width:min(64rem,calc(100% - 2.5rem)); height:clamp(28rem,72vh,48rem); margin:clamp(2.4rem,7vh,5rem) auto 3rem; border:1px solid rgba(221,53,44,.72); background:linear-gradient(150deg,rgba(9,9,11,.91),rgba(16,10,11,.82)); box-shadow:0 0 0 1px rgba(255,255,255,.05) inset,0 0 35px rgba(204,27,20,.22),0 30px 80px rgba(0,0,0,.7); backdrop-filter:blur(8px); }
     .news-header { position:relative; padding:1.25rem 1.5rem 1rem; border-bottom:1px solid rgba(219,52,43,.42); text-align:center; }
     .news-header::after { position:absolute; right:25%; bottom:-1px; left:25%; height:1px; content:""; background:#ff3c31; box-shadow:0 0 12px #e32c23; }
@@ -52,6 +54,7 @@
       .landing::after { right:10%; bottom:8%; left:10%; }
       .actions { width:calc(100% - 1.5rem); padding-top:.75rem; gap:.55rem; }
       .action { min-width:0; flex:1; padding:.85rem .5rem; font-size:.68rem; letter-spacing:.08em; }
+      .release-status { width:calc(100% - 1.5rem); margin-top:.6rem; font-size:.68rem; }
       .news-shell { width:calc(100% - 1.5rem); height:calc(100svh - 6.5rem); min-height:30rem; margin:1.25rem auto 1.5rem; backdrop-filter:blur(5px); }
       .news-header { padding:1rem .8rem .8rem; }
       .news-list { height:calc(100% - 4.8rem); padding:.75rem; }
@@ -72,6 +75,7 @@
       <a class="action action-primary" href="https://github.com/fatum-foc/foc-launcher/releases/latest/download/FoC-Launcher-Setup.exe">Скачать лаунчер</a>
       <a class="action action-secondary" href="https://discord.gg/WMMbjusZ5" target="_blank" rel="noopener noreferrer">Discord</a>
     </nav>
+    <p class="release-status"><strong>Обновление от 15.08.2026:</strong> новое внутриигровое меню и экран загрузки устанавливаются лаунчером автоматически.</p>
     <section class="news-shell" aria-labelledby="news-title">
       <header class="news-header">
         <h2 class="news-title" id="news-title">Новости</h2>

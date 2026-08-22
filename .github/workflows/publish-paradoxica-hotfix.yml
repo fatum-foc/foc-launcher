@@ -1,0 +1,36 @@
+name: Publish Paradoxica hotfix
+
+on:
+  push:
+    branches:
+      - codex-paradoxica-hotfix-0.0.6
+    paths:
+      - .github/workflows/publish-paradoxica-hotfix.yml
+      - deploy/paradoxica-hotfix/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-paradoxica-hotfix-0.0.6
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout deployment branch
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Publish and verify signed launcher hotfix
+        run: node deploy/paradoxica-hotfix/publish.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

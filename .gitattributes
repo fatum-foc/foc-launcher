@@ -1,0 +1,4 @@
+deploy/paradoxica-hotfix/stable.json -text
+deploy/paradoxica-hotfix/stable.json.sig -text
+deploy/paradoxica-hotfix/15e1ae51be2b5b62f0c9f66908fde1e47971b90d0a53ab06b47ebd9387ad9be5 -text
+deploy/paradoxica-hotfix/c6dbc7ca137bd8f93f8dbec1de4d9604d3c464a437fc787e59bb9a83dd1a70be -text

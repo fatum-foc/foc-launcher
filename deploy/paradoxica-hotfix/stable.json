@@ -1,0 +1,3628 @@
+{
+  "schemaVersion": 1,
+  "clientVersion": "0.0.6",
+  "authProtocol": 1,
+  "minecraft": {
+    "version": "1.20.1",
+    "forgeVersion": "47.4.22"
+  },
+  "java": {
+    "majorVersion": 17,
+    "runtimeVersion": "17.0.20+8",
+    "archiveSha256": "7fe2324cc5901a89aaa0e8dc232075c59f2aca5270c533bdb1b861a5274af834",
+    "archiveSize": 43776637,
+    "downloadUrl": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20%2B8/OpenJDK17U-jre_x64_windows_hotspot_17.0.20_8.zip"
+  },
+  "server": {
+    "host": "fatumofcreation2.minerent.io",
+    "port": 31395
+  },
+  "files": [
+    {
+      "path": "config/advancementplaques-common.toml",
+      "sha256": "b7812dd0a3535dea9871f2695b363727bb0abde965d365ca41e8c63b8bd67884",
+      "size": 3024,
+      "mode": "managed"
+    },
+    {
+      "path": "config/almostunified/debug.json",
+      "sha256": "3e03a291b5310a6b94a45aff63e4731baa643701c42a968ed716483ccd1d5a37",
+      "size": 162,
+      "mode": "managed"
+    },
+    {
+      "path": "config/almostunified/duplicates.json",
+      "sha256": "40639e8cb9e9ea52b8557c50d29fc06e73e2ad1e7ca27ae5ce8fe2eca2e97188",
+      "size": 677,
+      "mode": "managed"
+    },
+    {
+      "path": "config/almostunified/startup.json",
+      "sha256": "ad711622f9b8c5cc8115f52396f5d82587b809fb20cbf9d94c7744aeebcaf4d5",
+      "size": 25,
+      "mode": "managed"
+    },
+    {
+      "path": "config/almostunified/unify.json",
+      "sha256": "9dd105eb404830a866f936672179caba237f174c21bdc31c7756442339241131",
+      "size": 1745,
+      "mode": "managed"
+    },
+    {
+      "path": "config/ambientsounds-client.json",
+      "sha256": "d002319f21f057d57ab1e6a018877d57e687b2e3cd6a5479164ec66d98cd0f78",
+      "size": 4083,
+      "mode": "managed"
+    },
+    {
+      "path": "config/amendments-client.toml",
+      "sha256": "0b43c7eac6bd8881f37c9f626dbee4e9b0d9a4c8dbcf23810aedc59c502b946b",
+      "size": 4285,
+      "mode": "managed"
+    },
+    {
+      "path": "config/amendments-common.toml",
+      "sha256": "e559deff5744ceab591efea5f18636ee60893ce22357e081aee46af1fd955d70",
+      "size": 5008,
+      "mode": "managed"
+    },
+    {
+      "path": "config/apoli-client.toml",
+      "sha256": "9a260476f00ad4828eebaebe5eb85e556a3f248f0b811c32ff076c625db890bd",
+      "size": 147,
+      "mode": "managed"
+    },
+    {
+      "path": "config/apoli-common.toml",
+      "sha256": "b15934d497ae5837e88013c5ec03754904eea2d010a7e557734dd9f049510538",
+      "size": 92,
+      "mode": "managed"
+    },
+    {
+      "path": "config/appleskin-client.toml",
+      "sha256": "b477c8c493b28366a6b282f29f46c9415e3a4a2a23fff6e09331644c435dfd48",
+      "size": 1361,
+      "mode": "managed"
+    },
+    {
+      "path": "config/aquaculture-common.toml",
+      "sha256": "aff201054383adfd67347e968dd6aeaccd339454d51dd50983654b2c732acc31",
+      "size": 825,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/client.json5",
+      "sha256": "dfae4a12bf924a5e12380032ff257ec535c6b003fef539a3893adb05c0a69c56",
+      "size": 551,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/common.json5",
+      "sha256": "736bec8c910558091bb749ac7adb013822a253a02f1f70637eb193952768d2b1",
+      "size": 1584,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/relics/anglers_hat.yaml",
+      "sha256": "9968d01308caaf19580d54b73d0da6f57df704a0c8cf2b31c5b97ef43b12494d",
+      "size": 2396,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/relics/lucky_scarf.yaml",
+      "sha256": "536c62ea50dfceed9df7f899ce4b0eac12de848a2e0574a529f1a23e6f9f1b37",
+      "size": 2450,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/relics/novelty_drinking_hat.yaml",
+      "sha256": "efae5a2a5d1683a68fd724839ddea6c55ff9f6e283075672015e0da80dd70c2c",
+      "size": 4214,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/relics/plastic_drinking_hat.yaml",
+      "sha256": "efae5a2a5d1683a68fd724839ddea6c55ff9f6e283075672015e0da80dd70c2c",
+      "size": 4214,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/relics/scarf_of_invisibility.yaml",
+      "sha256": "aff53fb985d1d93e441e6bd52b4bb54f6b12623a3a68a4dadf029986ee031750",
+      "size": 3892,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/relics/snorkel.yaml",
+      "sha256": "e288a73aaa1723525a8a2781d7ba77d944476b7455d597053a320cbfdc138491",
+      "size": 2399,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/relics/superstitious_hat.yaml",
+      "sha256": "81f7f65d0bb88683df206ce24c172c6e64e7a175d462e250ca4d0f6df3e8c350",
+      "size": 2453,
+      "mode": "managed"
+    },
+    {
+      "path": "config/artifacts/relics/villager_hat.yaml",
+      "sha256": "017c57e6b74b77391103748bc0de002b414b108223c2ae9624045a81f6384169",
+      "size": 2326,
+      "mode": "managed"
+    },
+    {
+      "path": "config/attributefix.json",
+      "sha256": "8c76c570cd7826f8833aa15263df5b9ffbfc30032157764eafe225ba976f79df",
+      "size": 17139,
+      "mode": "managed"
+    },
+    {
+      "path": "config/attributeslib.cfg",
+      "sha256": "fe85b449a9f8e1b5b74799822840aedfb5e2b8e269cbb1503f6d4c12a7a47fe7",
+      "size": 2686,
+      "mode": "managed"
+    },
+    {
+      "path": "config/badoptimizations.txt",
+      "sha256": "9f56bd826fea6a8c6d68db34b09218e9c66154b82854150f954ddf56ec80f439",
+      "size": 3004,
+      "mode": "managed"
+    },
+    {
+      "path": "config/balm-client.toml",
+      "sha256": "4719b58de048b9b8666d2d5f3b880361a5bef0419420804355e987d96fa9e9e1",
+      "size": 797,
+      "mode": "managed"
+    },
+    {
+      "path": "config/balm-common.toml",
+      "sha256": "4719b58de048b9b8666d2d5f3b880361a5bef0419420804355e987d96fa9e9e1",
+      "size": 797,
+      "mode": "managed"
+    },
+    {
+      "path": "config/betteradvancements-client.toml",
+      "sha256": "2c5eba79cde20bd1658a43dc0527e5d45b2e462d2f065e228527eee8513446be",
+      "size": 924,
+      "mode": "managed"
+    },
+    {
+      "path": "config/bettercombat/client.json5",
+      "sha256": "79b1171ceb58d73c2a6f5ffbf00f68f4afe8abbd0da624ddfa1777ba3767f519",
+      "size": 521,
+      "mode": "managed"
+    },
+    {
+      "path": "config/bettercombat/fallback_compatibility.json",
+      "sha256": "754feb4474a3f4d9fe6bd08f38c248fd5a796ed51f38d7d5704680250f3a34ca",
+      "size": 2995,
+      "mode": "managed"
+    },
+    {
+      "path": "config/bettercombat/server.json5",
+      "sha256": "8a3ca0cbeb543de63d478c7aaf065c0244a8b5d4face1c0a0124d1d3a1790c12",
+      "size": 5169,
+      "mode": "managed"
+    },
+    {
+      "path": "config/betterdungeons-forge-1_20.toml",
+      "sha256": "946ce267d09bcedf40defb277de8b64ee72b37118230d47b20eabf55aa32f91a",
+      "size": 3486,
+      "mode": "managed"
+    },
+    {
+      "path": "config/betterendisland-forge-1_20.toml",
+      "sha256": "705bd38f35f830cdee96cda5e3b3e31bc2992b6b5962bb08820dc24fef5d0846",
+      "size": 329,
+      "mode": "managed"
+    },
+    {
+      "path": "config/betterjungletemples-forge-1_20.toml",
+      "sha256": "1e558a006956669d6ab8dc9941eba2050365516c46f7008b3a9ee7b49764e273",
+      "size": 126,
+      "mode": "managed"
+    },
+    {
+      "path": "config/bettermineshafts-forge-1_20.toml",
+      "sha256": "016afc8af06af822bdaa07681699b3c068ec26274116b30b359d5ff03ef9ce11",
+      "size": 3773,
+      "mode": "managed"
+    },
+    {
+      "path": "config/betterwitchhuts-forge-1_20.toml",
+      "sha256": "a053c7647937df86a050d1d2d5e2e42dae07b96af4a1e799c5c917e28456b15d",
+      "size": 440,
+      "mode": "managed"
+    },
+    {
+      "path": "config/biggerendcities-config.toml",
+      "sha256": "06c98e44747c689236d36082f8ba5abb0ab3cf40b95a1d56b7d97cedb441f044",
+      "size": 587,
+      "mode": "managed"
+    },
+    {
+      "path": "config/blueprint-client.toml",
+      "sha256": "89ef9f568d793018db983b9f944e85876a4cebd408f8f4d2182b3c38fa44ef7e",
+      "size": 770,
+      "mode": "managed"
+    },
+    {
+      "path": "config/blueprint-common.toml",
+      "sha256": "468c5e98de57915c1fbc04f24934723184bfaff4d08f666ed8a8b4bdce894a25",
+      "size": 614,
+      "mode": "managed"
+    },
+    {
+      "path": "config/blur-client.toml",
+      "sha256": "5d1f67d3dabefcc6eed0b1ac4074e79e6d918f000691f2c727f4d8739f6f59e7",
+      "size": 801,
+      "mode": "managed"
+    },
+    {
+      "path": "config/calio-common.toml",
+      "sha256": "2bd48dad7f48c14b11d2a092bcad062c22d802a0b4ed954907a673b93f3f3295",
+      "size": 176,
+      "mode": "managed"
+    },
+    {
+      "path": "config/chat_heads.json5",
+      "sha256": "53f1eec25e4b4457fce81b1349f18ca44b2dcd3a47092a609b4a0db02362f008",
+      "size": 152,
+      "mode": "managed"
+    },
+    {
+      "path": "config/citadel-common.toml",
+      "sha256": "3fcd8013137a86c00953d4be1e56945b84b87594be722bbf3b3be8d752e2577f",
+      "size": 648,
+      "mode": "managed"
+    },
+    {
+      "path": "config/citresewn.json",
+      "sha256": "f40a21e858b346630f19d8b0724fe94473ae3db46f856fa8338da5e13364ad18",
+      "size": 139,
+      "mode": "managed"
+    },
+    {
+      "path": "config/clickthrough.json",
+      "sha256": "a7f46ed54b7cc91766dab57b062b1f5c9bd78f9933a26a4a990386b45cab647f",
+      "size": 72,
+      "mode": "managed"
+    },
+    {
+      "path": "config/CoroUtil/General.toml",
+      "sha256": "d86beab1176c367beeed3b8fb8a2a8dfbd8a1db7293f067c01bc38c73020e398",
+      "size": 133,
+      "mode": "managed"
+    },
+    {
+      "path": "config/cosmetica/cosmetica.properties",
+      "sha256": "67421b37151710665a86b330d583d84f20d89371f3615e3c3679580bdd62a9a9",
+      "size": 170,
+      "mode": "managed"
+    },
+    {
+      "path": "config/cosmetica/pack_settings.json.disabled",
+      "sha256": "d8ef02c40b10ca28edba23db2be1db2ba5a13c7a7feb7a757089a7374dda09f7",
+      "size": 804,
+      "mode": "managed"
+    },
+    {
+      "path": "config/creeperoverhaul.jsonc",
+      "sha256": "9d870b28f9a1479f952f258f7f01aebceb17fdc78c23014469c8ac055fad9bbb",
+      "size": 1850,
+      "mode": "managed"
+    },
+    {
+      "path": "config/cupboard.json",
+      "sha256": "08bda8a4a20d302cb97d06bf11c4991e152a3a9e04c17302ea3b42aa77e6b028",
+      "size": 1090,
+      "mode": "managed"
+    },
+    {
+      "path": "config/curios-client.toml",
+      "sha256": "ebc96c813d601e9c61b6929a8490e71fa990dc64918c19e1f9937bb275510abc",
+      "size": 706,
+      "mode": "managed"
+    },
+    {
+      "path": "config/curios-common.toml",
+      "sha256": "5fe808869d46a4b80e1191fbe40f40a4d63987beda0eaeb2d89b909a990ea2ea",
+      "size": 161,
+      "mode": "managed"
+    },
+    {
+      "path": "config/defaultoptions-common.toml",
+      "sha256": "3c6307abe209aeab5c7ae65e011e1460d59826bde479b284c297f876cbb07355",
+      "size": 381,
+      "mode": "managed"
+    },
+    {
+      "path": "config/defaultoptions/keybindings.txt",
+      "sha256": "bcd41007e3fe4c10a805609b78768a8e8e3edf68871ed735164cf097800e7f10",
+      "size": 12460,
+      "mode": "managed"
+    },
+    {
+      "path": "config/defaultoptions/options.txt",
+      "sha256": "361e441c69d565843d10a26eda2f1c4f5c2fe2b10f47a44342121d75c6c3927d",
+      "size": 3351,
+      "mode": "managed"
+    },
+    {
+      "path": "config/defaultoptions/servers.dat",
+      "sha256": "654c65d29560c8206f9a29ec6e228be23e6e309c7530b0ba25c0e611bfb030e1",
+      "size": 281,
+      "mode": "managed"
+    },
+    {
+      "path": "config/doapi/recipebook.json5",
+      "sha256": "e79155bb3698c317bea2c3daf5ff66d85f3431e2a2563e5dac06f9093218395b",
+      "size": 307,
+      "mode": "managed"
+    },
+    {
+      "path": "config/draggable_lists.json5",
+      "sha256": "b9f4428f21aaacf95acf58e97de4b990c3e9b0bcf48c0b54c318b2b50e347b92",
+      "size": 68,
+      "mode": "managed"
+    },
+    {
+      "path": "config/drippyloadingscreen/options.txt",
+      "sha256": "8d0edcad69219e217683bde3437b11318db348c7cce676c7c67de99b58f0ccd5",
+      "size": 2465,
+      "mode": "managed"
+    },
+    {
+      "path": "config/dummmmmmy-client.toml",
+      "sha256": "f05d1d72a1b504dabcab426a3eee4533161a17aedbf5f8fcaa315d54622b434d",
+      "size": 1611,
+      "mode": "managed"
+    },
+    {
+      "path": "config/dummmmmmy-common.toml",
+      "sha256": "d2877ef93c6acdd9384f7ef001af24b37eb22f08176cb47e352ca87b5aa03923",
+      "size": 1439,
+      "mode": "managed"
+    },
+    {
+      "path": "config/dynamic_fps.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "size": 3,
+      "mode": "managed"
+    },
+    {
+      "path": "config/dynamiccrosshair.json5",
+      "sha256": "427aadd29aea1256db321fcac7f33d3fd3e858324d85269a77deee7a0614c701",
+      "size": 2999,
+      "mode": "managed"
+    },
+    {
+      "path": "config/embeddium-fingerprint.json",
+      "sha256": "a5ca66fa1f9bd455aa6b12a0d9085f7c8e93921b6f1157a361034d67caf24439",
+      "size": 427,
+      "mode": "managed"
+    },
+    {
+      "path": "config/embeddium-mixins.properties",
+      "sha256": "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619",
+      "size": 269,
+      "mode": "managed"
+    },
+    {
+      "path": "config/embeddium-options.json",
+      "sha256": "b78e1a745d5080dc2e50dd192982aeb59f32b1645626b77ac38a2b725ea52122",
+      "size": 851,
+      "mode": "managed"
+    },
+    {
+      "path": "config/enchdesc.json",
+      "sha256": "69e1df6089b71c3c2fe2c7cf6760937094fd22434111f527229a9fcea3f90bc5",
+      "size": 189,
+      "mode": "managed"
+    },
+    {
+      "path": "config/endergetic-common.toml",
+      "sha256": "d4101832272fd0801cf9db7288774b8898a5257bbe833a7ece259d19ac6693ef",
+      "size": 114,
+      "mode": "managed"
+    },
+    {
+      "path": "config/endermanoverhaul-client.jsonc",
+      "sha256": "5d9315a8ce308b193ca880f5a782879c0f117861b08ccb38baed6d049e29b26a",
+      "size": 39,
+      "mode": "managed"
+    },
+    {
+      "path": "config/endermanoverhaul.jsonc",
+      "sha256": "9502aced0fb4379a4a5e72c484fb155ffcdf80aff96f8f88ed4a0111b42d9003",
+      "size": 930,
+      "mode": "managed"
+    },
+    {
+      "path": "config/endrem.toml",
+      "sha256": "a7e392980ae50a17ca0075b0c44095b525d245c3920616d7893066b3f8b84d1f",
+      "size": 723,
+      "mode": "managed"
+    },
+    {
+      "path": "config/entity_model_features.json",
+      "sha256": "60d0e873575d1d8aa2b838c047fe3cc3cffffe7dbb08e7341bd411c4351eed78",
+      "size": 1241,
+      "mode": "managed"
+    },
+    {
+      "path": "config/entity_sound_features.json",
+      "sha256": "20c00e0c6271d6162c7a9ea668a04cf8bca538f40d0daf28638a7d0210020501",
+      "size": 126,
+      "mode": "managed"
+    },
+    {
+      "path": "config/entity_texture_features.json",
+      "sha256": "0554c0e7816266477c65c18d2ada9fdddf1c6750787efd329056223ca4a073b2",
+      "size": 1420,
+      "mode": "managed"
+    },
+    {
+      "path": "config/entityculling.json",
+      "sha256": "81b6afd82e5ab2ca45b5fc0f025ef5638b3d2df534dbc05bb7e399042706c961",
+      "size": 929,
+      "mode": "managed"
+    },
+    {
+      "path": "config/etf_warnings.json",
+      "sha256": "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e",
+      "size": 28,
+      "mode": "managed"
+    },
+    {
+      "path": "config/euphoria_patcher.properties",
+      "sha256": "95c12747642f1b8481cb73f756cb14fc953f5fe34e3570e936e42c3e6f82d8f2",
+      "size": 651,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fallingleaves-client.toml",
+      "sha256": "2cd017af6632239398b694fadf8191d6073cf39585549876cc682843f521ecb3",
+      "size": 796,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/background_secondary.png",
+      "sha256": "70fe7ff53f898cffb91b5a1a73b0bd3a2f4156b28c2aa80c1469a548b3a4e160",
+      "size": 1153187,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/background.png",
+      "sha256": "14c7c5f989bc2c27638468336fb0a7196292a76a410997e99fac7b85bd2814eb",
+      "size": 1727013,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/button_long_disabled.png",
+      "sha256": "e3ad9bdb1c368bd95db7c675f70be90443192ab9c7497d7b04e6ecf2c51702e1",
+      "size": 297335,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/button_long_hover.png",
+      "sha256": "6987dc97ddf06f4b791398c462490f2a32692bc23fe2c62a2f4ddb527db5c2d0",
+      "size": 643734,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/button_long_normal.png",
+      "sha256": "2a06d107786197186c3698d4266b22f82fa4e41ff7924a834a4c6308ffe5b013",
+      "size": 606600,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/button_square_disabled.png",
+      "sha256": "86ec27faab0d0253576c587fc9b7a82b7f7ac3d81372fa66570c6e71935a82c1",
+      "size": 973132,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/button_square_hover.png",
+      "sha256": "786719b1435798c3474479d359b811f6373350f0066777f45a0c20fd7f8a0fdb",
+      "size": 1980346,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/button_square.png",
+      "sha256": "b84230f45646562ea24678164efb3bb29d26d78d25cce6de25136f2900ab4ce1",
+      "size": 1999120,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/loading_logo.png",
+      "sha256": "d0f29d5789a46256a63fd58fd7a990a4e2810f5cc9283df5f38b31bdef151c62",
+      "size": 2223948,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/assets/foc/logo.png",
+      "sha256": "e8993c235e1ce8c78737a609e26473296c31b333938b810bceba41d17fa08330",
+      "size": 2359013,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/custom_gui_screens.txt",
+      "sha256": "ff492043eaf454c46e949d5eef32ece90cc5a19feb50a161dd29a43b5732c880",
+      "size": 51,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/customizablemenus.txt",
+      "sha256": "be39debcfb76e6e775dd44ea4d6fb96975aa2dca35f0d681b717d30c421cafe3",
+      "size": 207,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/customization/foc_loading_screen.txt",
+      "sha256": "85488d9431a7cdbc614bc0b8dc2206bd01731109b2fa46d0eccefa0e7e48c98a",
+      "size": 2398,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/customization/foc_title_screen.txt",
+      "sha256": "c65ed67d634548720e5dec4886339abf9509f45730832f8d37d31109bff0b78d",
+      "size": 5972,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/legacy_checklist.txt",
+      "sha256": "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0",
+      "size": 42,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fancymenu/options.txt",
+      "sha256": "024b20df54eabe4c1803b1f9f1f8a7685bac7334f3b4f9c0df826626da6b2eff",
+      "size": 4949,
+      "mode": "managed"
+    },
+    {
+      "path": "config/farmersdelight-client.toml",
+      "sha256": "940f68676859e852c600974c4776e986453ce7d3b2cf27ac156535e26c160e11",
+      "size": 478,
+      "mode": "managed"
+    },
+    {
+      "path": "config/farmersdelight-common.toml",
+      "sha256": "025092b2d2580893fb4ce9054a90f96e00e8636a47a734a7ece340a2a94f5734",
+      "size": 3930,
+      "mode": "managed"
+    },
+    {
+      "path": "config/ferritecore-mixin.toml",
+      "sha256": "53e846d82c80068ec5284c27aef9a67b6cdcebea31fcce2a33c1cfd6125c7ed1",
+      "size": 1516,
+      "mode": "managed"
+    },
+    {
+      "path": "config/firstperson.json",
+      "sha256": "9f7dbec90d04ac669ca6a650599445e805d58b0e9e9cef293a0eed98e337f40d",
+      "size": 571,
+      "mode": "managed"
+    },
+    {
+      "path": "config/fml.toml",
+      "sha256": "4b9e1f5b9c84ceff8eebff012a1f2530c20659627b3e5e397e88a78e69d746d5",
+      "size": 1147,
+      "mode": "managed"
+    },
+    {
+      "path": "config/foc_weaponry/weapon_scan_runtime.json",
+      "sha256": "92198631f757c71b618d1261a53fc3a821cb57c4f0ec1b07ab085af43c215396",
+      "size": 131767,
+      "mode": "managed"
+    },
+    {
+      "path": "config/foc-pst-progression/crafting-xp/alchemist.json",
+      "sha256": "1e22dbfaf3a4b0b0c86c36ed61aa24c1553b1c22fe9d5fa6a5644b69bb4e2749",
+      "size": 1075,
+      "mode": "managed"
+    },
+    {
+      "path": "config/foc-pst-progression/crafting-xp/blacksmith.json",
+      "sha256": "7779b08f7581e77601b5b53caab1d696b69390387aed8f9526e00d605aa4caa7",
+      "size": 128,
+      "mode": "managed"
+    },
+    {
+      "path": "config/foc-pst-progression/crafting-xp/cook.json",
+      "sha256": "97f30808900d7c26e2cde375ccc2b46dc6b86107b1344fdfbd7aab95e30d0864",
+      "size": 122,
+      "mode": "managed"
+    },
+    {
+      "path": "config/foc-pst-progression/crafting-xp/defaults.json",
+      "sha256": "c728544b2a916c01ebc2ca4c1cb6ee3905b1415a6fb6c927ce15584df7c69737",
+      "size": 147,
+      "mode": "managed"
+    },
+    {
+      "path": "config/foc-pst-progression/crafting-xp/enchanter.json",
+      "sha256": "342b32d2de60d4e72e3259722fd4791979900672d514298f3ee1f50a6dc6c610",
+      "size": 127,
+      "mode": "managed"
+    },
+    {
+      "path": "config/foc-pst-progression/entity-xp.toml",
+      "sha256": "0632ac90ea6c46403517237257f9641b216ad727a3a1a09dea225446a0ec3d10",
+      "size": 5604,
+      "mode": "managed"
+    },
+    {
+      "path": "config/foc-pst-progression/foc-pst-progression-server.toml",
+      "sha256": "9c1e1f14ea41c9e55c66f419099ce6809a76a231edc314c710f7c642915db51b",
+      "size": 1736,
+      "mode": "managed"
+    },
+    {
+      "path": "config/forge-client.toml",
+      "sha256": "0b1b3c45343435184c9dde3149b38afcdb97953e287686ecda54385f53ebcddc",
+      "size": 1628,
+      "mode": "managed"
+    },
+    {
+      "path": "config/global_data_and_resourcepacks.toml",
+      "sha256": "d6055224690c399a9657218b8fcb9fa2ff1f33a5f83e7a383f4b6aae835938d5",
+      "size": 1061,
+      "mode": "managed"
+    },
+    {
+      "path": "config/gml-script-mods.toml",
+      "sha256": "dc9b0f9c9c29949bcb91cebb2bcdc111a7d99bee1d2b2ea168f2edbc7b9a1ba6",
+      "size": 121,
+      "mode": "managed"
+    },
+    {
+      "path": "config/highlighter-common.toml",
+      "sha256": "22b7f87be30b7e3ce6fa3fe1cb588e8b3eae0bfc9ddc390ad346a1d1bbfebb4b",
+      "size": 720,
+      "mode": "managed"
+    },
+    {
+      "path": "config/ice_and_fire_spellbooks.toml",
+      "sha256": "679840bbf91dfe49e7ea3e455bd5d9bfdb1975d9b6227618dac756bd82819ded",
+      "size": 144,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire-client.toml",
+      "sha256": "a4dcf9cc2e7f541fe73ee2f9780694cb8e9c7738a0a06e2a456453c3a47a8b9d",
+      "size": 321,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire-common.toml",
+      "sha256": "f4f30bb8fc7e695be65bad46edf7233faa1d45ab92dd052a7e6891f0e0b97aa4",
+      "size": 15912,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/amphithere_biomes.json",
+      "sha256": "8c44f2cf4903712ff88743373cd6893b31226af031f9822ec63ae337abdbb4b0",
+      "size": 767,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/cockatrice_biomes.json",
+      "sha256": "d01094612d9d8a48e99809522ff7e009bc1ec7e03a57e0f5f8c9cd51ef44b0bb",
+      "size": 907,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/cyclops_cave_biomes.json",
+      "sha256": "0ec4ed27179c0a74651de2fe91cc17024ca05bd598b7f8043ebb794ad6d16a3a",
+      "size": 610,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/deathworm_biomes.json",
+      "sha256": "119e3398276786acafe198ebf3fd62d62e0e62e544ec74980c32bf0356c6f0c9",
+      "size": 1369,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/desert_myrmex_biomes.json",
+      "sha256": "119e3398276786acafe198ebf3fd62d62e0e62e544ec74980c32bf0356c6f0c9",
+      "size": 1369,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/fire_dragon_biomes.json",
+      "sha256": "0366d55cbee86bf899cd68bee919b8b07f0925a44943a1fab08ffb89505fbeb7",
+      "size": 2113,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/fire_dragon_cave_biomes.json",
+      "sha256": "0366d55cbee86bf899cd68bee919b8b07f0925a44943a1fab08ffb89505fbeb7",
+      "size": 2113,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/fire_dragon_skeleton_biomes.json",
+      "sha256": "119e3398276786acafe198ebf3fd62d62e0e62e544ec74980c32bf0356c6f0c9",
+      "size": 1369,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/fire_lily_biomes.json",
+      "sha256": "0a1b2ea4da236463e214dd7eed0a7837df420c3957ad61434d65995111a67b9a",
+      "size": 277,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/forest_troll_biomes.json",
+      "sha256": "071e4cf9db64d5771b17d2487d8229562311c584ce56a824abb478f2cc00a911",
+      "size": 255,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/frost_lily_biomes.json",
+      "sha256": "91d500462895af7576de5eb64efd00faed857504f9eefe56cfa418a28ae34001",
+      "size": 624,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/gorgon_temple_biomes.json",
+      "sha256": "0ec4ed27179c0a74651de2fe91cc17024ca05bd598b7f8043ebb794ad6d16a3a",
+      "size": 610,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/graveyard_biomes.json",
+      "sha256": "44810e5361d38ad87b5028ffaf139832bcbce16c55898de796e79dd86b99d7ab",
+      "size": 467,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippocampus_biomes.json",
+      "sha256": "e33237977094c9d26012e2a1883c75ff7062ca16d43f2c9a66f4ceb5d92d2fc0",
+      "size": 254,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippogryph_biomes.json",
+      "sha256": "8a199a14a2abf91b76855781bd37ed146491e896fd05ba714a806bc47b2c1657",
+      "size": 855,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippogryph_black_biomes.json",
+      "sha256": "c482e650dee2fc71d0ba8726ebea20d78b9e345865449c57d5717ed55af05b37",
+      "size": 279,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippogryph_brown_biomes.json",
+      "sha256": "a05e7cbe7541bff74314da9b23976b072e727387185840645e60f5eb98e989be",
+      "size": 486,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippogryph_chestnut_biomes.json",
+      "sha256": "88466c293acef0b7725de96c7d21747948769d2e6b33e952d4c204472c898ecd",
+      "size": 601,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippogryph_creamy_biomes.json",
+      "sha256": "dd16c76d368fd696927c4d5b5cee80f682c0e7fe057af1a93e6cc9059b5abaab",
+      "size": 286,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippogryph_dark_brown_biomes.json",
+      "sha256": "a77dad8b397928fb3b1d9b249b586b8103f866790d215b9bed549add0fa6f3db",
+      "size": 1050,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippogryph_gray_biomes.json",
+      "sha256": "dbb0b4d04fe34c05a26f26df87d21967a4f6090670cfd6194e6de9badf254a1b",
+      "size": 418,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hippogryph_white_biomes.json",
+      "sha256": "172c79ed677b97663434c8bd90311802556489bcb8afb5fe246f5c8cac840ea4",
+      "size": 1249,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/hydra_cave_biomes.json",
+      "sha256": "ae56c23cf566a2fd020dfa6dd2acbbc4ca7770ee98223fd293b0bd0290fd816a",
+      "size": 747,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/ice_dragon_biomes.json",
+      "sha256": "31c08e6b056b55ed9afc91ab57f11c8e0806f9d5859886445de0acf5fd35035b",
+      "size": 534,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/ice_dragon_cave_biomes.json",
+      "sha256": "31c08e6b056b55ed9afc91ab57f11c8e0806f9d5859886445de0acf5fd35035b",
+      "size": 534,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/ice_dragon_skeleton_biomes.json",
+      "sha256": "91d500462895af7576de5eb64efd00faed857504f9eefe56cfa418a28ae34001",
+      "size": 624,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/jungle_myrmex_biomes.json",
+      "sha256": "8c44f2cf4903712ff88743373cd6893b31226af031f9822ec63ae337abdbb4b0",
+      "size": 767,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/lightning_dragon_biomes.json",
+      "sha256": "65ba1662b1a2c9b6f97c6a0f108ee1d1d0e928226d7fc1a05634e0a55329bbbf",
+      "size": 1748,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/lightning_dragon_cave_biomes.json",
+      "sha256": "65ba1662b1a2c9b6f97c6a0f108ee1d1d0e928226d7fc1a05634e0a55329bbbf",
+      "size": 1748,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/lightning_dragon_skeleton_biomes.json",
+      "sha256": "d01094612d9d8a48e99809522ff7e009bc1ec7e03a57e0f5f8c9cd51ef44b0bb",
+      "size": 907,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/lightning_lily_biomes.json",
+      "sha256": "d01094612d9d8a48e99809522ff7e009bc1ec7e03a57e0f5f8c9cd51ef44b0bb",
+      "size": 907,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/mausoleum_biomes.json",
+      "sha256": "183480a63bca5a487b31b28b0ec742fb21f3115a6a1de2f38f0f6daf81d46e3e",
+      "size": 728,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/mountain_troll_biomes.json",
+      "sha256": "a05e7cbe7541bff74314da9b23976b072e727387185840645e60f5eb98e989be",
+      "size": 486,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/ore_gen_biomes.json",
+      "sha256": "e7855fa7d73f4d3af77f47ddd70b4fcbab7862302d004b4ddae9dddc75c4e402",
+      "size": 145,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/pixie_village_biomes.json",
+      "sha256": "f363deb6b29d728bacaaf301fa456a393f8ce0498bde963884368956eb42ffdb",
+      "size": 2194,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/sapphire_gen_biomes.json",
+      "sha256": "91d500462895af7576de5eb64efd00faed857504f9eefe56cfa418a28ae34001",
+      "size": 624,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/sea_serpent_biomes.json",
+      "sha256": "e33237977094c9d26012e2a1883c75ff7062ca16d43f2c9a66f4ceb5d92d2fc0",
+      "size": 254,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/siren_biomes.json",
+      "sha256": "e33237977094c9d26012e2a1883c75ff7062ca16d43f2c9a66f4ceb5d92d2fc0",
+      "size": 254,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/snowy_troll_biomes.json",
+      "sha256": "7b0d7d7459b06d0f5a01e0d3cb803d534f9b654ad3b4d9e336f0f50fbe06f4d7",
+      "size": 250,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/stymphalian_bird_biomes.json",
+      "sha256": "ae56c23cf566a2fd020dfa6dd2acbbc4ca7770ee98223fd293b0bd0290fd816a",
+      "size": 747,
+      "mode": "managed"
+    },
+    {
+      "path": "config/iceandfire/wandering_cyclops_biomes.json",
+      "sha256": "46fb4b80eb9d9667223509ea17aa4b5aa65851f3cb09c09886d6b9dde1a63601",
+      "size": 632,
+      "mode": "managed"
+    },
+    {
+      "path": "config/immediatelyfast.json",
+      "sha256": "f2b7f219198f0a911d04b09f545f2c1256e8d114951443924878dc10963e16aa",
+      "size": 1060,
+      "mode": "managed"
+    },
+    {
+      "path": "config/immersiveui.yaml",
+      "sha256": "349603ff9637c36fd8fa13f551614cff09c23b298f6c5782a9daa46a3d2dcadd",
+      "size": 993,
+      "mode": "managed"
+    },
+    {
+      "path": "config/irons_spellbooks-client.toml",
+      "sha256": "09e833b496652d4dd9b64e3915083ed485327bca2f06831c9b86c347f5dd1be2",
+      "size": 2894,
+      "mode": "managed"
+    },
+    {
+      "path": "config/itemborders-common.toml",
+      "sha256": "892ede9976b284638218d5ebbfad7ae5fddfcc537e9edfacafb7b5a331c9872f",
+      "size": 4243,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/blacklist.cfg",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/ingredient-list-mod-sort-order.ini",
+      "sha256": "7e2438ec0abdc9d78dbccdb5f9466d4cf11bcafe996ec04bfffb13d9b2599bd9",
+      "size": 632,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/ingredient-list-type-sort-order.ini",
+      "sha256": "39b5426fb7faf645a83c210d457352b05f64859d4b9adb58242c113c2c8e6878",
+      "size": 74,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/jei-client.ini",
+      "sha256": "8c5ae3646c07bfd87fe9259333c2df2b7eb2670cd0c64c21f48f69e0a5629a18",
+      "size": 7991,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/jei-colors.ini",
+      "sha256": "5f37aacd70460fdc2631ff45e98e8a2ce4e52d3e9a50917edf40eeed1236952e",
+      "size": 1338,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/jei-debug.ini",
+      "sha256": "ee9bb0f0f8465629951fe9a532f3ebe3327671a12d4cc6395860d7f7494b970b",
+      "size": 918,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/jei-mod-id-format.ini",
+      "sha256": "326b4f9b813ca8183bfaeee184cf7248c7a75c4d85b59322e349c0e964c253f3",
+      "size": 463,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/recipe-category-sort-order.ini",
+      "sha256": "4e8f4ed2098ed203445f2f306b3dde0964f6052d80f7025a6bd441cf01cfd26b",
+      "size": 865,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jei/world/server/_______Minecraft_b2e592ed/bookmarks.ini",
+      "sha256": "a5b1f587e5136e5036d353caf15d3d541ee78ddb22711878bb8365ce297f7fe4",
+      "size": 48,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jeresources-common.toml",
+      "sha256": "9dbe8c6973dc932be6dd20cb63381276740b23c75349dbe870fc8098c8529989",
+      "size": 236,
+      "mode": "managed"
+    },
+    {
+      "path": "config/jeresources.toml",
+      "sha256": "9dbe8c6973dc932be6dd20cb63381276740b23c75349dbe870fc8098c8529989",
+      "size": 236,
+      "mode": "managed"
+    },
+    {
+      "path": "config/languagereload-client.toml",
+      "sha256": "2958a38ad3d60a671567db8580f9312174137d084013e54af5f011a365ef92df",
+      "size": 130,
+      "mode": "managed"
+    },
+    {
+      "path": "config/lithium.properties",
+      "sha256": "b87ee52fdc722ce1497e7ff55fdbd0660fc9df40c8f2f8167465cab55a388f0d",
+      "size": 349,
+      "mode": "managed"
+    },
+    {
+      "path": "config/lootr-client.toml",
+      "sha256": "4e37c085446f2a5be3a3cc4765ffc9657e71473245574c3e398c64fef07615a0",
+      "size": 243,
+      "mode": "managed"
+    },
+    {
+      "path": "config/lootr-common.toml",
+      "sha256": "ae99282e7831653bf582c9c51d33a41243554af41bb1eb49ebdcdbec11e6f444",
+      "size": 6195,
+      "mode": "managed"
+    },
+    {
+      "path": "config/modelfix-client.toml",
+      "sha256": "fa745470318f2031347f2b34c369ca01b81eece56b4a9eb58e2edf47a8cea230",
+      "size": 1292,
+      "mode": "managed"
+    },
+    {
+      "path": "config/modernfix-common.toml",
+      "sha256": "fad9aea710ec3508eab562cd8f2b5f8e2dda6ee1c5fb1fe818f90ce253017f66",
+      "size": 107,
+      "mode": "managed"
+    },
+    {
+      "path": "config/modernfix-mixins.properties",
+      "sha256": "45f37f0bbd8f22081a05db076a2e561eb8c682bba3d8208c399ee91c86ab7f04",
+      "size": 5062,
+      "mode": "managed"
+    },
+    {
+      "path": "config/moonlight-client.toml",
+      "sha256": "47297d47ca3fa4525d1adbc7234b9b0dc2ee490b87216fe6002e34ff69acac08",
+      "size": 1027,
+      "mode": "managed"
+    },
+    {
+      "path": "config/moonlight-common.toml",
+      "sha256": "02cd35fbcc371cf63303ae1264ad9f4613b3f73ace93417af825baf7d3ac7baf",
+      "size": 1023,
+      "mode": "managed"
+    },
+    {
+      "path": "config/MouseTweaks.cfg",
+      "sha256": "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4",
+      "size": 135,
+      "mode": "managed"
+    },
+    {
+      "path": "config/namepain-client.toml",
+      "sha256": "1bbd644b6a196c222eb8cfecc88ffe747954d72b0d2a298b0160a0473c240777",
+      "size": 899,
+      "mode": "managed"
+    },
+    {
+      "path": "config/naturalist.toml",
+      "sha256": "81f36bfb34b8064a0678c72bb747fded626c2fbf5e735ec2058cece5b242aac7",
+      "size": 2250,
+      "mode": "managed"
+    },
+    {
+      "path": "config/notenoughanimations.json",
+      "sha256": "e720c2ec0a063c88cee86a59d94bcae0e72fabb236ca85e882d0d329747c0f34",
+      "size": 2386,
+      "mode": "managed"
+    },
+    {
+      "path": "config/notenoughcrashes.json",
+      "sha256": "e604a3705ca2adf9499a412afefc61fb589448de43e4652db6232f94699e3950",
+      "size": 156,
+      "mode": "managed"
+    },
+    {
+      "path": "config/ok_zoomer/config.toml",
+      "sha256": "12773635f8ee3dc52dcb5cb0a627d339eddedca81a3c766500c8d84dab6bb2da",
+      "size": 6422,
+      "mode": "managed"
+    },
+    {
+      "path": "config/openloader/advanced_options.json",
+      "sha256": "2ee7700b88371d21265000c50ef149c42863fd22e0ecbb5dc6af78fd7493fee8",
+      "size": 177,
+      "mode": "managed"
+    },
+    {
+      "path": "config/origins-common.toml",
+      "sha256": "e40acbd10e42d4b705522060331f75c57559e9c5f21f3cbca6db5d9efbc9e706",
+      "size": 2538,
+      "mode": "managed"
+    },
+    {
+      "path": "config/pehkui-client.toml",
+      "sha256": "18741b2cf056e7609eac3dabe966569a12a819ab03e083c873c85c27a52929a7",
+      "size": 138,
+      "mode": "managed"
+    },
+    {
+      "path": "config/pehkui-common.toml",
+      "sha256": "8a4afcf7a631191fbe6a1416b4d16f55584deb22dd90ec7ec337fdf444a92ba7",
+      "size": 407,
+      "mode": "managed"
+    },
+    {
+      "path": "config/personality-client.toml",
+      "sha256": "603091de493301b99e4bc975d99ab51041fb6392d5c01f08078c67f6da02472d",
+      "size": 1279,
+      "mode": "managed"
+    },
+    {
+      "path": "config/personality-common.toml",
+      "sha256": "d5861d025473ddd0a9b5326698b044546072e95028ef7f4ad8f438fad1bb7e09",
+      "size": 171,
+      "mode": "managed"
+    },
+    {
+      "path": "config/pickupnotifier/pickupnotifier-client.toml",
+      "sha256": "242a0f58407ecc71ff5e2c6cd2910001c089ee4e6130454c377115e8a8f3c83a",
+      "size": 3355,
+      "mode": "managed"
+    },
+    {
+      "path": "config/pickupnotifier/pickupnotifier-server.toml",
+      "sha256": "6e18bfa2ec02629937474e436f3f44fb67d54fd6e6b47a7c9b4c5b3a3bd83916",
+      "size": 485,
+      "mode": "managed"
+    },
+    {
+      "path": "config/polymorph-integrations.toml",
+      "sha256": "f09398fbdb8880a2e2a0f234aa6578dd49ada68fecbe899608841f39c430034a",
+      "size": 333,
+      "mode": "managed"
+    },
+    {
+      "path": "config/quark-common.toml",
+      "sha256": "fedbbde3fe40c39afe3628c07d6ca35c40c8626a715d47a6048c34748b44f606",
+      "size": 82276,
+      "mode": "managed"
+    },
+    {
+      "path": "config/raised.json",
+      "sha256": "9dd658b7841ec3dc96eccd99d84f0c6ed42693e58a9c2560327ab6c4ea5b07c0",
+      "size": 820,
+      "mode": "managed"
+    },
+    {
+      "path": "config/realcamera.json",
+      "sha256": "57af85807830c217cf068b5e381dcef05ee829dadf4a38e06153f2c4758351d7",
+      "size": 4819,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/amphibian_boot.yaml",
+      "sha256": "39b8a55d06987657fc8ef15c6c85ba048544c1b05396312b5f2753d583f3738e",
+      "size": 8786,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/aqua_walker.yaml",
+      "sha256": "68e3e439dcb721259e3985ce4515ef5260a166212ba63b569f6b648363090dc2",
+      "size": 2397,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/arrow_quiver.yaml",
+      "sha256": "524af2f5d9f1a57983936ab75d2042e53d49b657e40114d91b946f3ca78f2bf9",
+      "size": 13309,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/bastion_ring.yaml",
+      "sha256": "78cc299a4c492321823721997f8b90ca5672de63976d267885e084ba5f761ac2",
+      "size": 2660,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/blazing_flask.yaml",
+      "sha256": "8af42f810a66263852c16f8749376346080a5fecef9488bb3bc12912c08cc1a4",
+      "size": 5314,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/chorus_inhibitor.yaml",
+      "sha256": "8d0e4663ac5e07ed77f0d5c68d06dc8710d4981b2e0a9dd4e224f7217e341153",
+      "size": 3748,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/drowned_belt.yaml",
+      "sha256": "b84c6b0e5f89432ac73cd9c294ea44f58927f5f80bc96f71348f5cc824e7f03d",
+      "size": 9064,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/elytra_booster.yaml",
+      "sha256": "21de4aa1b35eb1f6845f78ba0352dc4fd388b79e9ea1279f5c7524fd14282f01",
+      "size": 3755,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/enders_hand.yaml",
+      "sha256": "0e64ec0885a1286814d49af57c791a9b4369382c53a33350828ec8057de2ff1c",
+      "size": 2672,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/holy_locket.yaml",
+      "sha256": "3a5b2a427b9e0de593688b952ad1d0856c1c0fe2076997b65c515badacd9050f",
+      "size": 11568,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/horse_flute.yaml",
+      "sha256": "03f0644ebcfbe433139f9aaaf004357c87c249eea7bbd38451984a4f5a59e961",
+      "size": 2850,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/hunter_belt.yaml",
+      "sha256": "bc79e132db585506ba69baf0849a6a5aec9e8bd86951f5f5a2fcab28c9ca761e",
+      "size": 4065,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/ice_breaker.yaml",
+      "sha256": "ff60615f0d0f7208f04f9b7f2fc07fe350b2a383eb71b3798df722d6105cb1cf",
+      "size": 5641,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/ice_skates.yaml",
+      "sha256": "92400db4163b2cddd59104b0dca35865b9dd9ac30c1b7973aa9e2adce67342ea",
+      "size": 5646,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/infinity_ham.yaml",
+      "sha256": "d8d96d73fa32983adefd3d4d5cf73585237f7fd458108c347689692840a7d186",
+      "size": 4079,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/jellyfish_necklace.yaml",
+      "sha256": "f7d63686df01246598f33725ed7a347a6387653b21cee29882b4424465994744",
+      "size": 4503,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/leather_belt.yaml",
+      "sha256": "ff08f2a3ffed4ac5b4e3282d4087055a15d58e722a004e9efa6919fc560bb01d",
+      "size": 2306,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/magic_mirror.yaml",
+      "sha256": "918f3862327f645da2fc8de1f6bbf119bf753307fc67c8649482a56f41d5c080",
+      "size": 3897,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/magma_walker.yaml",
+      "sha256": "91495c617e65d40cb38610f300374d6ddce426a4cb32f7731280a493fb1fd105",
+      "size": 2815,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/midnight_robe.yaml",
+      "sha256": "bdb3a40d5a75ecc3b52cddca368751a2caed160d7151eabc256354451607071a",
+      "size": 7055,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/rage_glove.yaml",
+      "sha256": "a882a417d0654ec75f7ad6d69022a0b39de0d1214f58a3e7cf3a479d388e68aa",
+      "size": 14617,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/reflection_necklace.yaml",
+      "sha256": "831de8669d3a87ac0c674a564e854ed76d2159831a083942ae5bbd894f372108",
+      "size": 5332,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/roller_skates.yaml",
+      "sha256": "cf23559b6acead1187cb717a5c6baec8282022e04593cce0dcbf7b048e43f442",
+      "size": 3945,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/shadow_glaive.yaml",
+      "sha256": "b2c7ded48d76878f5bf7ea69acca460dd46e7460c942e64facafe2128d171de1",
+      "size": 9949,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/space_dissector.yaml",
+      "sha256": "95b5c8774dc1effb0aed7feca6f02f6a9212c6a405b8d6d7fdf3a9dbd9125417",
+      "size": 3902,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/spatial_sign.yaml",
+      "sha256": "8a461adec56c28ed37918680b65d2edd33f9be67a13d379b621e3640b1167d1d",
+      "size": 2448,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/spore_sack.yaml",
+      "sha256": "1a31566828ba46d2019b9316f29a440da72eb3ce084c3013398ad734d24b926f",
+      "size": 16198,
+      "mode": "managed"
+    },
+    {
+      "path": "config/relics/relics/wool_mitten.yaml",
+      "sha256": "2dc50e02a423d5c2b7b926bc03346abd1cba2bba63875b3f51747d88c3e5fd90",
+      "size": 6746,
+      "mode": "managed"
+    },
+    {
+      "path": "config/resourceful-config-web.json",
+      "sha256": "70cf5f1189c165e888e390e010e4c7a68c190bb934765ea1bf75d20f3f81396a",
+      "size": 196,
+      "mode": "managed"
+    },
+    {
+      "path": "config/saturn-optimizations.toml",
+      "sha256": "47019e25dcb00d2d1da22d725095dc39bcbbf10cdfb8429d8d5a97b231a272b3",
+      "size": 445,
+      "mode": "managed"
+    },
+    {
+      "path": "config/screenshot_viewer-client.toml",
+      "sha256": "c60d29d22d3ddb07ed9e8443e9245e114014f43f8c7ccbf6a730db62de4dfd01",
+      "size": 331,
+      "mode": "managed"
+    },
+    {
+      "path": "config/shouldersurfing-client.toml",
+      "sha256": "ef7a719e3591838cb91db97d6011e347626939466746f026192edee9b7315507",
+      "size": 14023,
+      "mode": "managed"
+    },
+    {
+      "path": "config/sidebar_buttons.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "size": 2,
+      "mode": "managed"
+    },
+    {
+      "path": "config/simple-rpc/server-entries.toml",
+      "sha256": "17b07ca5f6758448c4c2effbe9cb9f7b2b534c83b1287b5b751c3bbe4f74f2d0",
+      "size": 150,
+      "mode": "managed"
+    },
+    {
+      "path": "config/simple-rpc/simple-rpc.toml",
+      "sha256": "75fdeae053c08959a8e8066bde147bdf66dfa710de62da984740a7f7d70d5a2f",
+      "size": 9661,
+      "mode": "managed"
+    },
+    {
+      "path": "config/skilltree-client.toml",
+      "sha256": "1019a5094c566633f9e7bff77038fcd2ec966cbd824fc337460814e2752a79f1",
+      "size": 56,
+      "mode": "managed"
+    },
+    {
+      "path": "config/skilltree-common.toml",
+      "sha256": "df6684e350684fb53bbc6135300fe066c8b3d3aef6a5bfb8851bd5f24c7bcfab",
+      "size": 2258,
+      "mode": "managed"
+    },
+    {
+      "path": "config/smallships-client.toml",
+      "sha256": "2055d621b5cb01a3a0cc7134bb97d8109f56152938131f7c31bf27b28c264f9b",
+      "size": 1187,
+      "mode": "managed"
+    },
+    {
+      "path": "config/smallships-common.toml",
+      "sha256": "0c89c2c56094816dcad1d0693cb52dbb61720797d8b2b0e2d25f9937a464de56",
+      "size": 6271,
+      "mode": "managed"
+    },
+    {
+      "path": "config/smoothboot.json",
+      "sha256": "0fb1b063fbe05d51aef22e92fdedfb830527096a026c75ec8775d553db257acb",
+      "size": 198,
+      "mode": "managed"
+    },
+    {
+      "path": "config/smoothchunk.json",
+      "sha256": "d0b988aa519ffd031e5421091eec1054464f2e29e48781f6274efd977535f574",
+      "size": 275,
+      "mode": "managed"
+    },
+    {
+      "path": "config/smoothswapping.json",
+      "sha256": "3edb7a3cca0e7c3ec09f642516aba923bd8eba7ca414289a4103912fd24a7e66",
+      "size": 72,
+      "mode": "managed"
+    },
+    {
+      "path": "config/sound_physics_remastered/allowed_sounds.properties",
+      "sha256": "e207a7e394c8c3d40a3a82ad26ecf3ab4e25a49b8efe1b5e5a63ff68536c79da",
+      "size": 84626,
+      "mode": "managed"
+    },
+    {
+      "path": "config/sound_physics_remastered/occlusion.properties",
+      "sha256": "594796289a301e20a7b6d771aab174e28bf55405562d36d0f45fba0f104930c4",
+      "size": 4831,
+      "mode": "managed"
+    },
+    {
+      "path": "config/sound_physics_remastered/reflectivity.properties",
+      "sha256": "cff778afc9586066a076499333e9ab796e8370c81ffd8afa59ea95a9218f74a8",
+      "size": 4713,
+      "mode": "managed"
+    },
+    {
+      "path": "config/sound_physics_remastered/soundphysics.properties",
+      "sha256": "c9e79968413b6d27a548872869c347d8006b29878cb05210c9b24b4be5efe45a",
+      "size": 4908,
+      "mode": "managed"
+    },
+    {
+      "path": "config/terrablender.toml",
+      "sha256": "59d79e8bc4a42e678196a7164e5841a9803f8684f1b52b9944ce554c9f353691",
+      "size": 552,
+      "mode": "managed"
+    },
+    {
+      "path": "config/titlebar_settings.json",
+      "sha256": "613cfef75821f40c853da7c63681de7fbf93cecf5e00cd5bba626927b12cacbf",
+      "size": 277,
+      "mode": "managed"
+    },
+    {
+      "path": "config/too_many_bows.json",
+      "sha256": "7e6d7045f6321a85a6ff8588ac966a7d4552a2717e369e0af49e8c897ab87fc4",
+      "size": 4144,
+      "mode": "managed"
+    },
+    {
+      "path": "config/travelerstitles-forge-1_20.toml",
+      "sha256": "c339ffec047e7faa8471f9c36ab83434db0262476194da70f4691575a6a1cea5",
+      "size": 10709,
+      "mode": "managed"
+    },
+    {
+      "path": "config/vinery.toml",
+      "sha256": "fe8acd27cd79406ce57b35ef6c41fe2641faab6ce230e94e17554ca188b77e5f",
+      "size": 2933,
+      "mode": "managed"
+    },
+    {
+      "path": "config/vinery/config.json5",
+      "sha256": "20c727c81c03303920bb1117c61727da1c71dfffc2c7d088796336c5a0793c05",
+      "size": 1180,
+      "mode": "managed"
+    },
+    {
+      "path": "config/visuality/config.toml",
+      "sha256": "4127fd1edf4e15159bb8365cb8816c5ae0b6108a02d34aa1d964f4e16b7e3275",
+      "size": 267,
+      "mode": "managed"
+    },
+    {
+      "path": "config/visuality/particle_emitters/block_ambient.json",
+      "sha256": "734a10c828571b65d71d2f27ff2d3350603d097e96c5d0dd5f49319fe21b803b",
+      "size": 1293,
+      "mode": "managed"
+    },
+    {
+      "path": "config/visuality/particle_emitters/block_step.json",
+      "sha256": "54d4448f6c45ba1ad311f6c35b55b9b800ad4ae664f075707e05cd798b6eab7b",
+      "size": 219,
+      "mode": "managed"
+    },
+    {
+      "path": "config/visuality/particle_emitters/entity_armor.json",
+      "sha256": "4fea5a33cd09a91423bf58e9404ded2edd4ba3faff2d41543c5366adab92a73a",
+      "size": 737,
+      "mode": "managed"
+    },
+    {
+      "path": "config/visuality/particle_emitters/entity_hit.json",
+      "sha256": "db1fe2d772c0ed136c2d1da0c315bc50ba9760032a60253be6f37ce1d7e38ead",
+      "size": 683,
+      "mode": "managed"
+    },
+    {
+      "path": "config/voicechat-client.toml",
+      "sha256": "24a7b91377e08d0d8bc2805793c8150d473241aa816cbaa6fca9d254aa537ca5",
+      "size": 94,
+      "mode": "managed"
+    },
+    {
+      "path": "config/voicechat/translations.properties",
+      "sha256": "693643b1d393cbb3ea7f062afc4474fcd66e4036c4f8d7c056434979cbf512d1",
+      "size": 1182,
+      "mode": "managed"
+    },
+    {
+      "path": "config/voicechat/username-cache.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "size": 2,
+      "mode": "managed"
+    },
+    {
+      "path": "config/voicechat/voicechat-client.properties",
+      "sha256": "eae16f50a5916c7dec0fdec5a0547b564bf1649bd75d67bc416d608829902db1",
+      "size": 4293,
+      "mode": "managed"
+    },
+    {
+      "path": "config/voicechat/voicechat-server.properties",
+      "sha256": "e2764f466867c8f61e6bdefea9bb9c02fb4fc1f6a8944eb8dac33919410748aa",
+      "size": 2502,
+      "mode": "managed"
+    },
+    {
+      "path": "config/voicechat/voicechat-volumes.properties",
+      "sha256": "58242ef3075b166845e0081281b01113a55b9d095104a68b167e7b4bc08b87c5",
+      "size": 37,
+      "mode": "managed"
+    },
+    {
+      "path": "config/waterdripsound-client.toml",
+      "sha256": "09d637baa226275f201f2adbade0498545de0d1a44a6077ad2e633d95a4a296c",
+      "size": 508,
+      "mode": "managed"
+    },
+    {
+      "path": "config/weaponmaster_ydm-common.toml",
+      "sha256": "8decc3a11a8b12d6379871ae098ee2e1bb48522d1690396003d5cb6af7a7d8f3",
+      "size": 7657,
+      "mode": "managed"
+    },
+    {
+      "path": "config/WildfireGender/45cc1438-6471-3e20-90a4-6705cbae2b99.json",
+      "sha256": "f4f83c1d8dfdf7b01d6bfb92edc3b5475ca0e4ad76e1c1588898fbedd79a2fdf",
+      "size": 360,
+      "mode": "managed"
+    },
+    {
+      "path": "config/WildfireGender/client.toml",
+      "sha256": "10cf987482bce1d7846715c79e58d821ffa22de1e80887b58c28cf7e5d711670",
+      "size": 300,
+      "mode": "managed"
+    },
+    {
+      "path": "config/worldedit/worldedit.properties",
+      "sha256": "b49977107515a13b99814b95cf4df3a1e2d822d17cb89b0f30c06a911e63ef0d",
+      "size": 2542,
+      "mode": "managed"
+    },
+    {
+      "path": "config/worldeditcui.config.json",
+      "sha256": "862eb44e855b5ff872006933278eaf6c17c04c4cb56c6a90f7e2b1c232a2920b",
+      "size": 576,
+      "mode": "managed"
+    },
+    {
+      "path": "config/xaerominimap_entities.json",
+      "sha256": "b54c6eedcb752d1235c6ea60dc365d4d1621c4c80768faaac4347e76d4e10a13",
+      "size": 5531,
+      "mode": "managed"
+    },
+    {
+      "path": "config/xaerominimap-common.txt",
+      "sha256": "771a844d13ab6c2ff99f14b8fd912d02c55a1a4104361692b740c3e596084f6f",
+      "size": 145,
+      "mode": "managed"
+    },
+    {
+      "path": "config/xaerominimap.txt",
+      "sha256": "73a005ae00a73430dba8472f16fdd9463d69c51ed68836ee76556b87825b5b44",
+      "size": 3641,
+      "mode": "managed"
+    },
+    {
+      "path": "config/xaeropatreon.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mode": "managed"
+    },
+    {
+      "path": "config/xaeroworldmap-common.txt",
+      "sha256": "f02ca95d7246bd4b9c7de895c46108fff42fd5fcf9d56816b7bdba821597b58f",
+      "size": 120,
+      "mode": "managed"
+    },
+    {
+      "path": "config/xaeroworldmap.txt",
+      "sha256": "647a1e6550880c73a1c00b0cf08bea1cb500a346109283bd7c5f83a676fc39cc",
+      "size": 1220,
+      "mode": "managed"
+    },
+    {
+      "path": "config/yacl.json5",
+      "sha256": "d26a63d3cdf326412ba86dcc2781060bc53ed6c74ac7808e65325452e264e820",
+      "size": 35,
+      "mode": "managed"
+    },
+    {
+      "path": "config/YungsCaveBiomes-forge-1_20_1.toml",
+      "sha256": "16316547df6cac6c68523673bc052b0f750a78ebcec15d2606fe46941f0691dd",
+      "size": 339,
+      "mode": "managed"
+    },
+    {
+      "path": "config/zeta-common.toml",
+      "sha256": "684816927033626b990f8e277a43c0e24f6ef650cb38f9fee935f974fffd7392",
+      "size": 1912,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/abnormals_delight/lang/ru_ru.json",
+      "sha256": "c5b40ec0b6befdc4e8222150cd2a430354a79b4075c441f454c67a21ef92fffa",
+      "size": 157,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/amendments/lang/ru_ru.json",
+      "sha256": "5f7c2af97cb72a78ecf1602c4ac8b05957b9238d964937b2708a1022a3c653e6",
+      "size": 314,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/attributeslib/lang/ru_ru.json",
+      "sha256": "cdff728ec5750e51993d579072732e43e56408bf4b8f0c711480edc80a7aa43c",
+      "size": 182,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/bakery/lang/ru_ru.json",
+      "sha256": "f8ded13140f598090ac1ad397bb5de301fc2ba1828595cdd1c8389dd8ccf19ef",
+      "size": 189,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/bettercombat/lang/ru_ru.json",
+      "sha256": "c63ccd6b6ae1e45e7a6a19178b79cd271c9e995f496bcac56b5d7152f6ebd225",
+      "size": 442,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/betterendisland/lang/ru_ru.json",
+      "sha256": "b7235d3445cbe8e8c43c8f869e42bf9a4b538353fbd2d2f84000101c876a754b",
+      "size": 924,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/brewery/lang/ru_ru.json",
+      "sha256": "25d0babbb888f55a528850c4405b16a0a2b02e1ceba5fbe26cb44e4b7645bc6c",
+      "size": 60,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/citadel/lang/ru_ru.json",
+      "sha256": "520526569bc57373f73639ddc54a4c42738f2c32f86c85636ee05dfd23f80d77",
+      "size": 1667,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/creeperoverhaul/lang/ru_ru.json",
+      "sha256": "d31b33d55c3ad4373fbf60930ca28152bc0cc2465a3c27629a90fdb74792699b",
+      "size": 2410,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/curios/lang/ru_ru.json",
+      "sha256": "d8a884b4436dc2c1966b5d91c6fcbbcb72a7cdeb138362c49864e76c39d27d68",
+      "size": 276,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/doapi/lang/ru_ru.json",
+      "sha256": "ee3e4bb94c456e1650fc58e2fa7b5c94b62386b717d2ad4a7ee023a6134006fc",
+      "size": 1474,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/dummmmmmy/lang/ru_ru.json",
+      "sha256": "6f79e719ae55cdadbc69eb7dddc90222384fb1057b554e6b4a93cce962bfad19",
+      "size": 182,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/endergetic/lang/ru_ru.json",
+      "sha256": "7093772b6dea9d81c54f81b3f136446079d2e10f9179678bd87faae214655f8d",
+      "size": 260,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/endermanoverhaul/lang/ru_ru.json",
+      "sha256": "989b08ab8ca6ed9f7add47b01ef0df91a766e8500c73d30c0f41e5e995969aa3",
+      "size": 543,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/endrem/lang/ru_ru.json",
+      "sha256": "d5607c4d1af74ce769eb6e58a46736fea90204f1682faf7c0b0667c02163ed03",
+      "size": 435,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/fantasyfurniture/lang/ru_ru.json",
+      "sha256": "5d3970fb476a32de894ff41788bebd7bdb025cef61b2b6528efc56465ced63ff",
+      "size": 1226,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/farmersdelight/lang/ru_ru.json",
+      "sha256": "96f06c68989f113cdb1b5c8f81bd5e201cbdadb23a5a28e3c03e47d471a59e8b",
+      "size": 1542,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/geckolib/lang/ru_ru.json",
+      "sha256": "a98b111354f818e97c1a931c8dd90416e332cbdc9e9cbf27c1f1a9ff4525c57b",
+      "size": 2499,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/hearth_and_home/lang/ru_ru.json",
+      "sha256": "c598df5101ecb88d1bf931b9809a8f2367713124a26e9c4acff7ebb665f4eb6d",
+      "size": 31647,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/iceandfire/lang/ru_ru.json",
+      "sha256": "d998934d1ab609e7613eff4be545f8c66553c4be75c8497be57fcf6fd6ec276d",
+      "size": 506,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/irons_spellbooks/lang/ru_ru.json",
+      "sha256": "fff38ea7c0ad59ab337c3abc6452195d3f61b802e424eea241edb3b6aee6699a",
+      "size": 1579,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/lang/en_us.json",
+      "sha256": "b6e3c9b64c0e23ac32d307b4293e74b146f7e198671278430a9c238be3414ec7",
+      "size": 481,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/lang/ru_ru.json",
+      "sha256": "5baaa6d1034bb0acded681784c2b39cba3e3bab4c948fd7a85f22e5d0d6b6229",
+      "size": 642,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/models/item/dwarf_icon.json",
+      "sha256": "e3a4de1c025bd31fd6e38fea0f1c93f097b6724c108700bfc66d73a4bdc09701",
+      "size": 102,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/models/item/felid_icon.json",
+      "sha256": "f5595d1bb027445e346faa7fd9849756eb5920281160e839897bfc3e0da8db21",
+      "size": 102,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/models/item/high_elf_icon.json",
+      "sha256": "b17ccedd3a85a5bdb81f5d0d14c1ec743ee8d315cd016cd41bc0e26b589bd475",
+      "size": 105,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/models/item/human_icon.json",
+      "sha256": "97f258a7a743effa0bc33d438f6b4c5030ef0258668a872d36b5fb7be573c34b",
+      "size": 102,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/models/item/salamander_icon.json",
+      "sha256": "d3cf996b962a521205936e4929c8d4860766d17482504b530e51c7cb16865e22",
+      "size": 107,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/models/item/walker_icon.json",
+      "sha256": "0d29f52d87f5e8026f4a51d078f9b50e010e5cda941cc3cf262942250adf5c17",
+      "size": 103,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/models/item/wood_elf_icon.json",
+      "sha256": "aee13587962e1002622c146191bd833e0cd3edcddcbe4398fcbc7352b40e8ab4",
+      "size": 105,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/item/dwarf_icon.png",
+      "sha256": "f205890488cd5da2c023af18e123e2896dbcb303225d58f3a51ca261440a531e",
+      "size": 9722,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/item/felid_icon.png",
+      "sha256": "5e9e74d0c5899ca555a9a1b0b9fcee09685ce92b140154ad6c9c1eb08ef3f519",
+      "size": 10514,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/item/high_elf_icon.png",
+      "sha256": "3ecf71b2c297777ea091340ec2636dc99a7e623e7cc6568dc8f1429bdfb35b77",
+      "size": 11024,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/item/human_icon.png",
+      "sha256": "ea29f2a43bf38c2b4e434c9c9727f2d1974107e1c2979c78f08df46219ff937b",
+      "size": 10129,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/item/salamander_icon.png",
+      "sha256": "13e54ed44d78bf096c1ae5ad11ce7d030ccaeff6b88a8a2ac1df6a7b67201ae8",
+      "size": 10303,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/item/walker_icon.png",
+      "sha256": "4cdccc6f3d8b80d180485ff21e5cdbb5f201b1fa1dbbadc076be3364c3956f10",
+      "size": 10545,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/item/wood_elf_icon.png",
+      "sha256": "5fa5e5541b9bbd7feebd5ace7b8fa2a7e4670c066b06912babfe8e6f66dffa3e",
+      "size": 10830,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/mob_effect/clarity_of_mind.png",
+      "sha256": "4146fbb4a326bae4ade1f53c4b0fc6c9eca1ff8001a639292e9bb1a2de0264bd",
+      "size": 2963,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/mob_effect/predators_strength.png",
+      "sha256": "1e653792f40d94f132975f1ebe319a9174bd7aa9f1417e391f10b1e86a5a1525",
+      "size": 2640,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/lionfishapi/lang/ru_ru.json",
+      "sha256": "c10148080f4ae613177b9c19c4c0a9383e21d67d2a7f5d676f9c2d565fa4e6ad",
+      "size": 437,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/mcwfurnitures/lang/ru_ru.json",
+      "sha256": "f380604ab34508e47c230c721ce9ae9ea0623663c69c33dbe3cacf52ce42f290",
+      "size": 7729,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/miners_delight/lang/ru_ru.json",
+      "sha256": "2caea0c3c45e6bdfa3ed805972122d7f2d4da6d24249b1843279f4376981f761",
+      "size": 7327,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/naturalist/lang/ru_ru.json",
+      "sha256": "592beb5073465aff10a07693f9b621e8ca8330d9b95be94f97d81e735f89e747",
+      "size": 22030,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/origins/lang/ru_ru.json",
+      "sha256": "4fa20d4ff123a5963c78bf96f6d70382283e497899a597aa31b787952b44bc5c",
+      "size": 1069,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/pehkui/lang/ru_ru.json",
+      "sha256": "6220e255c3ac1ec95d0b00e2a74240f93ccc428bd680060497ca55ae9d5abb38",
+      "size": 13985,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/quark/lang/ru_ru.json",
+      "sha256": "892df102f553285215d9de175cb15dca2e38bdb5511412de2f9cf4397d5e60f9",
+      "size": 145,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/relics/lang/ru_ru.json",
+      "sha256": "f943decf71dab516f4b823043dfb419eb61e8eda2d8e6ca73926a50514c07333",
+      "size": 5397,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/lang/en_us.json",
+      "sha256": "c6c84fba2a073d7f1f08065de2a01f781d6945cfe815b1a33610c7871e7d5353",
+      "size": 700,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/lang/ru_ru.json",
+      "sha256": "f762a52b179487f4aa73f4ca5dc5f609f5d0391ea326865588e4ec02bf266c9f",
+      "size": 1095,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_archer_amulet.json",
+      "sha256": "20c3965cdc2e1da300ccb4c9a207af6587f5e2a8297ba60b88b79f0be1c7b3d2",
+      "size": 96,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_attack_speed_gloves.json",
+      "sha256": "8a21041848e1981819e6809b6e6363aab2f4c8255d8323ec23599cc901d967aa",
+      "size": 89,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_critical_amulet.json",
+      "sha256": "75b9ed45c6e40d673c17ef88ce60e1cc0989b35404e7ef3d4ce8b492cd443ccd",
+      "size": 95,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_damage_gloves.json",
+      "sha256": "36c8bac6a24ab941e19559ff7390215362d1d4046c176e93a339df3471399817",
+      "size": 85,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_defense_helmet.json",
+      "sha256": "939cf683a2b53298ae9ffab2fff4f10d1cffdbbb3a7b88044fac8d45af3a32a9",
+      "size": 106,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_empty_ring.json",
+      "sha256": "aa3742a1068cff2993047d76a2fd4a33e5a0feaad70f4ab8286c2117abb63049",
+      "size": 89,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_evasion_gloves.json",
+      "sha256": "c4242392ed9609f19412198e89ddcfbc2e0884daffaf949af2756d82d158e35e",
+      "size": 92,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_evasion_helmet.json",
+      "sha256": "f259233d2c996df4b89b695a07e1007330209dc6c159d6039684f23a833bbc4d",
+      "size": 104,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_mage_amulet.json",
+      "sha256": "ea077d758a7b9f1103e85f0edb071014a1b1a3883ef6a571b6b03d6fefa24224",
+      "size": 94,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_magic_resistance_gloves.json",
+      "sha256": "c91b2cd6aee650066218be1cc0730bcf401c4227f2835fb6d98952fc2f0c02a4",
+      "size": 91,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_mana_helmet.json",
+      "sha256": "81f0efdef94dd5a88dc7205b0664e69d3057f316d6aa115d51d4b056de04afc4",
+      "size": 105,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/skilltree/models/item/foc_vitality_amulet.json",
+      "sha256": "27a9e019ffcab4de718a48bb7e1f1b0bdbbaa973176ee08ce9430938d65290ff",
+      "size": 93,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/too_many_bows/lang/ru_ru.json",
+      "sha256": "c502866e661febd5065e04c6a39672d2771b82bd7f5dc9fcd04cb68d8afb3b3f",
+      "size": 27636,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/uteamcore/lang/ru_ru.json",
+      "sha256": "de43099b5ee709a278b4b28a6b3edb74c1a3def7475b477104b311f166c39019",
+      "size": 1142,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/vinery/lang/ru_ru.json",
+      "sha256": "f5661f994bb1c81feac9644f4c2d68c86e88d96cf7233df2faac1f63cc346364",
+      "size": 2388,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/assets/wildfire_gender/lang/ru_ru.json",
+      "sha256": "6701f190dd314473f79c53acb0c4bbaf1787f3bfff99c8488c4f8c04f6e13f74",
+      "size": 5658,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/client_scripts/foc_disabled_items_jei.js",
+      "sha256": "73f99f8bd7cd66873a7f3a6797ec1b6687cf5e5d666d8f76a9843ff97aead64f",
+      "size": 140,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/client_scripts/food/foc_food_effect_tooltips.js",
+      "sha256": "c6f718c179e925fd974cdfb426525edd4d71e7d9e4c6dbdb58a26e3a00827faf",
+      "size": 3368,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/client_scripts/potions/foc_active_effect_tooltips.js",
+      "sha256": "08675c687c62d23967d46e35e600eb671c9b20b992351ad26be0f41caa1b4654",
+      "size": 9959,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/client_scripts/potions/foc_potion_item_values.js",
+      "sha256": "b8706cb9317d3cbc223191081a0ac48f87bb194208a920b5d266d73901e602bc",
+      "size": 18367,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/client_scripts/PST/foc_pst_custom_equipment_tooltips.js",
+      "sha256": "71ab05322464b0ef6bdc6aaaf779285f8507bfa00e152d71d3aec7235fbe8a7b",
+      "size": 1322,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/client_scripts/PST/README_SCRIPTS.txt",
+      "sha256": "400efa61b6018ab04a8c760d0c7d81a833234fd8b15830c26c8411ca88542eed",
+      "size": 354,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/config/client.properties",
+      "sha256": "51c6af62a6f441c34777150299f9edb09b78394658ed0eaa6a7e900221c05037",
+      "size": 376,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/config/common.properties",
+      "sha256": "584972f68a6aa3909818fe925d6420b92921eb81004c616b3ec086f68b73238e",
+      "size": 329,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/README.txt",
+      "sha256": "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af",
+      "size": 1203,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/server_scripts/balance_scripts/items/potions/foc_potion_attributes_runtime.js",
+      "sha256": "81c1940d2b54dd3de38f96a1497f05d48fe2e904e714a4541cdfac3afd1902e1",
+      "size": 8408,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/server_scripts/example.js",
+      "sha256": "a19b7c81a150bd965b153ded9c45ee7649eaad9e10d0a5ec1d662e7b15ceadb2",
+      "size": 126,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/balance/amethyst_rapier_speed.js",
+      "sha256": "a46ba32f041a61e91fe89deb244d4b0c7dc4af00b05786814b4f23c237765e91",
+      "size": 1259,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/balance/disabled_irons_spells.js",
+      "sha256": "83435374695d1e371afeada0bfda9f65f52669359a1fa4de5271e9ae40b488a1",
+      "size": 1107,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/balance/disabled_items_from_CREATIVE_TABS.js",
+      "sha256": "23b8b89fd36229f500cb200e2b5f45989b6deb2e95a849a9734ea354541ec1f0",
+      "size": 1703,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/balance/foc_disable_vanilla_jump_critical.js",
+      "sha256": "d63b8ec3bf827845ac893b989cce356e588dea20aad1eb661e16a44ac1d86b58",
+      "size": 714,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/balance/README_SCRIPTS.txt",
+      "sha256": "308e2af50f948c58227a8113a7bf63826cf22bde1408da3e6d9a2ff994e370b8",
+      "size": 1125,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/design/foc_race_icons.js",
+      "sha256": "82ec7ff6cde89e821c966a7994b9d91b26b04fc29d4ca3390b979086e45194f0",
+      "size": 831,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/design/README_SCRIPTS.txt",
+      "sha256": "fd9d5c701d5cee35a8e4cf7c619a59c12c7daeb8699f89449210bf6d471782b3",
+      "size": 352,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/new_effect/foc_bistraya_kopka_effect.js",
+      "sha256": "bfb80f5ff71b73827bf7501ce22b05ddd61a0b0e33d4749277ba33daa8a711b9",
+      "size": 540,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/new_effect/foc_sila_hishnika_effect.js",
+      "sha256": "6eb7762297ab2ac5855ac90887028d167a03a75d0a130b8cd7ec0991d83cf52b",
+      "size": 953,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/new_effect/foc_yasnost_razima_effect.js",
+      "sha256": "5ca25dfde8d76be302114947a7156facdb31259f9eff743aadc895cb184b8c81",
+      "size": 544,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/new_effect/README_SCRIPTS.txt",
+      "sha256": "612b94f347d728ed78f7486a97a3e185924804104826c435a625f574644509ed",
+      "size": 733,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/PST/foc_alchemist_potion_filter.js",
+      "sha256": "8d944f16a45dc03f9767e9c9b90eaa1170f63bb8686bd45350f2cf544d260f8d",
+      "size": 1727,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/PST/foc_pst_custom_equipment.js",
+      "sha256": "63423d502f271eb85d4e919cfe505051c5c7c5caed0f76cf3f9f6bb2af99780e",
+      "size": 734,
+      "mode": "managed"
+    },
+    {
+      "path": "kubejs/startup_scripts/PST/README_SCRIPTS.txt",
+      "sha256": "967179a16a3fa65466076dcb43d18f8228ad9643d02e4a28e950d6f54f5aab9b",
+      "size": 583,
+      "mode": "managed"
+    },
+    {
+      "path": "libraries/net/minecraftforge/fmlearlydisplay-foc/1.20.1-47.4.22-foc/fmlearlydisplay-foc-1.20.1-47.4.22-foc.jar",
+      "sha256": "b32d1519d3e9c800467d90818308f466468045bf96ff24f4738cc62b4aa6a736",
+      "size": 4117634,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/architectury-api.pw.toml",
+      "sha256": "8fc2033ee6c4f2ca22b54c3c3e3e31e7fb16c67a24ea55740a1a4e4d9e9b856c",
+      "size": 553,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/better-combat.pw.toml",
+      "sha256": "c97417a2c2419f968bf8b71ec624045911ea0bf974fcd6026a047ec8be2a30f1",
+      "size": 561,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/betterf3.pw.toml",
+      "sha256": "4be628666344246201b297e3c7df5d4b91c1fd907f3c77d1df571cd7a2aea05b",
+      "size": 551,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/clickthrough+.pw.toml",
+      "sha256": "9a1a9c71fe7ed449500c81ae63d718005f4bab064515dafbaaf1b729f0764649",
+      "size": 602,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/cloth-config.pw.toml",
+      "sha256": "a6fe1417c5ad84ce8d2310c82ebfcfacdc9bd4bc0edd9f575dcb92a7e93ee54a",
+      "size": 430,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/cupboard.pw.toml",
+      "sha256": "55b58eb75348293d7fd3fd4a9eb3f38ca1e3656941fa8c8079265d1d2819ae07",
+      "size": 384,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/female-gender.pw.toml",
+      "sha256": "ece330dab1eadd684e0b3f1a932d6bfcf793080ba02d76b64630eeee14df8666",
+      "size": 566,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/golemsarefriends.pw.toml",
+      "sha256": "e16ccec0ec964303fd427e8feb5dcaa6866e698ea01605c571ba12305219ae48",
+      "size": 421,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/irons-spells-n-spellbooks.pw.toml",
+      "sha256": "be2413d4c237486cffba241a69201cb5e31876fbcbc4c4cbdbf9d0e71142408a",
+      "size": 568,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/kubejs.pw.toml",
+      "sha256": "2730154eaa58e4310ddafce5415e2e6c5852ac27b20e954d2680874b6dc5727d",
+      "size": 545,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/notenoughcrashes.pw.toml",
+      "sha256": "59d158ad54e5ac5a382755da2b95bff28ae20f597caa6ea698ef1f794745c48b",
+      "size": 569,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/ok-zoomer.pw.toml",
+      "sha256": "37ca328774d93088142d23db0a8badca3baa9dd09b9dbffcb13871ac56ba711a",
+      "size": 558,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/personality!.pw.toml",
+      "sha256": "d937e96b5eaa801ada87a03691dd68dee3200ab875c4a52d6f22e3ef3d9c23a0",
+      "size": 550,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/placebo.pw.toml",
+      "sha256": "1365a934764f3a7c415164fa95b5fd5df540d103b3a93b11a64477abe2ecd1ae",
+      "size": 382,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/simple-voice-chat.pw.toml",
+      "sha256": "ea89dc0bf38bb505ef4bdc730e94ea39bedc276a17d991ff5d0e8245e7cb582d",
+      "size": 551,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/worldedit.pw.toml",
+      "sha256": "5eae725a00798e1595b3c3060ceb33015c0f22cb157b2aa6e0b61bc55fa0963e",
+      "size": 392,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/.index/worldeditcui-forge.pw.toml",
+      "sha256": "7e6cb03a09f0d277a5725bfc7570c225c24d8924d4ea97fab6395b2a46127b32",
+      "size": 552,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/aaa_particles-1.20.1-1.2.0-forge (Визуал эффекты молнии).jar",
+      "sha256": "8071239292ec96d497a02581c487d3160cc7f7bedfc6a7e6159ff49ec9cfc87c",
+      "size": 4294836,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/abnormals_delight-1.20.1-5.0.1.jar",
+      "sha256": "e839316b3919b32a9915d4c4b8ed6df96052550f7f5f19165310777200252a13",
+      "size": 614066,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/AdvancementPlaques-1.20.1-forge-1.6.7 (Визуал достижений).jar",
+      "sha256": "a7d6c9dee8d5f6ae45d6adef34a3c131e140be17abec5c0811069b444da3d6c3",
+      "size": 209420,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/almostunified-forge-1.20.1-0.9.4 (Технический от дублей рецептов).jar",
+      "sha256": "bd9f014d5de7bf98e1433c948758f8f0c0c16d21658a80fb61b3db5bf1afca7b",
+      "size": 212351,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/AmbientSounds_FORGE_v6.1.1_mc1.20.1 (Звуки).jar",
+      "sha256": "500fd3b97aae2ee9a72c5e7aa132d933a661b83c471d114b4a449b81b46d6192",
+      "size": 85695724,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/amendments-1.20-2.2.5.jar",
+      "sha256": "2ecb189991320d789cd2c539d770b5b52ad71eff93d186297d10853bcb6ee00a",
+      "size": 1301022,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ApothicAttributes-1.20.1-1.3.7.jar",
+      "sha256": "68487b11c0d4e2f67a85f2b04bf65e99ac15294f2923f4391f83e9542293187a",
+      "size": 227511,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/appleskin-forge-mc1.20.1-2.5.1 (Визуал для сытости и восстановления).jar",
+      "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426",
+      "size": 47428,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Aquaculture-1.20.1-2.5.7.jar",
+      "sha256": "4c96cf0dd3363a8e15f9ef6b6bfc00ac7d4791e8e9eeebe19b8092c59e800f8f",
+      "size": 601839,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/architectury-9.2.14-forge.jar",
+      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
+      "size": 580602,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ArmorTrimItemFix-forge-1.20.1-1.0.2 (Визуал для тображение иконок брони при отделки).jar",
+      "sha256": "2912d58471f9bd6ac86fa99ad97b04399573f5b9087ecdb8d3ebd747c220ad14",
+      "size": 1660966,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/artifacts-forge-9.5.13 (Предметы добавляет артифакты).jar",
+      "sha256": "1fe815b1dbd12782ae56080bf7d777922f5a9a4ec45c132dff46ebaa157d9a70",
+      "size": 843867,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/AttributeFix-Forge-1.20.1-21.0.4.jar",
+      "sha256": "5d8cc8928ce480288d5b504663bb13104df56ac72ce5bf36f2743ec27c701112",
+      "size": 19471,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/BadOptimizations-2.2.0-1.20.1 (Технический на оптимизацию).jar",
+      "sha256": "a9bd50db3e8f6faee809ec6f63d9038480c4bafb678e41ca6f16dd1c99775efb",
+      "size": 438559,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/balm-forge-1.20.1-7.3.31-all.jar",
+      "sha256": "8e8eb2c6f9484e7ce0d67af5287da8a05f78820a1f20513d65d6f84067a06bd9",
+      "size": 594928,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/BetterAdvancements-Forge-1.20.1-0.4.2.10 (Технический мод для достижений).jar",
+      "sha256": "3ff02700a0897682a221374a1547e9e739d7b195989f9400d3a1d3b59d8a2a20",
+      "size": 98123,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/bettercombat-forge-1.8.6+1.20.1.jar",
+      "sha256": "e147e13732e0fac83aee209487fdeb10a03e52c33e1b1439dbce01a80f3e8dbb",
+      "size": 1050118,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/BetterF3-7.0.2-Forge-1.20.1.jar",
+      "sha256": "e46ced73bdf78a59573a7188cfbe7256353f21a67eef752dc39b5e5816fc61c0",
+      "size": 468517,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/BetterSmithingTable-1.1.0-Forge-1.20 (Технический улучш визуал кузн. стола).jar",
+      "sha256": "2d121c4b3f74f2e9de1742267b9e2dca8347f662130a52e443c6e9f360ccfe9a",
+      "size": 17422,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/blueprint-1.20.1-7.1.3.jar",
+      "sha256": "f21d3560ae3e5ee8c0482c43bcd78ea9909a23e5b2a38478b0b25f3d99270808",
+      "size": 1151213,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/blur-forge-3.1.1.jar",
+      "sha256": "7ab7248ecfc0fa9cf2e6dd7530732263e580d7a794a6ba999366af345e7c8e71",
+      "size": 177259,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Bookshelf-Forge-1.20.1-20.2.13 (Ядро).jar",
+      "sha256": "c31fed2c1a1c0d72d3ef996bb84521b7d6a8fbd3115c89c001f13a7ffd56f64b",
+      "size": 343962,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Boss Music Mod 1.20.x v1.2.0 (Музыка при сражении с боссами).jar",
+      "sha256": "36b44ffc868757deb4d31aa638329525b5e3c94590f95f13db72abc2ef7bc442",
+      "size": 9017146,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/bots_lib-4.0 (Ядро).jar",
+      "sha256": "ac9b3072166bd8a626c75b9faa2f1f00c9bcefce787b2bce8cc64edb7b11ef79",
+      "size": 21206,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/caelus-forge-3.2.0+1.20.1.jar",
+      "sha256": "43cabe35f0618c0bd01af02e7568ca6f15fd32bb6a90d04c9898bb01e8dc1e81",
+      "size": 40125,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/cakechomps-forge-6.2.0+1.20.1 (Звуки и частици у торта).jar",
+      "sha256": "203ee7fb2b972d14f4d21d7f8b40485c0b3ce5b5f9d8d5ff2e133b73fee5d3f8",
+      "size": 30164,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/chat_heads-0.12.13-forge-1.20 (Визуал Головы в чате игры).jar",
+      "sha256": "e2e4726775c1280eabf22cfc026526702f1437b24d9eec148f26126b7518d209",
+      "size": 251048,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/cherishedworlds-forge-6.1.6+1.20.1 (Визуал закр. сервера).jar",
+      "sha256": "244ab1c22de6b1ef8e61bdf13508de5927fceeff44277bee06e4539c537f487f",
+      "size": 60991,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/citadel-2.6.3-1.20.1.jar",
+      "sha256": "56c7ab87348a5292583aac787b6cf11b5193e77f02af1d17ea75a96f8640b3ce",
+      "size": 3185275,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/citresewn-1.20.1-5 (Технический для текстур).jar",
+      "sha256": "b7fdf42262e9be2dd599386128ed0383d339dd4b585eea0f73f5bde5f0de5832",
+      "size": 188383,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/clickthrough-plus-forge-3.4.1+1.20.1.jar",
+      "sha256": "b8bd249d4885439203793755865d3cda08e0ab6e27937c0f04bc943b63019950",
+      "size": 246184,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/cloth-config-11.1.136-forge.jar",
+      "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2",
+      "size": 1181413,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Clumps-forge-1.20.1-12.0.0.4 (Технический опыт в одну капельку).jar",
+      "sha256": "1d1cfcf386f182b1d0bdbe4bd4fc57b96234e8c7468e95e1575ad4dd6433243a",
+      "size": 20299,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Controlling-forge-1.20.1-12.0.2 (Технический для настройки клавиш).jar",
+      "sha256": "516308a93824119f6a1ebc75425aa21ee8f8de0c331942793a054ba6d9c24944",
+      "size": 115280,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/coroutil-forge-1.20.1-1.3.7.jar",
+      "sha256": "11448808a42c17425cf2ea39701841008683d6ad6e2838a34eef0253251a870f",
+      "size": 64187,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/cosmetica-forge-2.0.1-1.20.1.jar",
+      "sha256": "ccc87f576744050ae1560cf59e783c70c0c3c6cf57a42346caf4f77b8146a5ee",
+      "size": 6439005,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/CraterLib-Forge-1.20-2.1.0 (Ядро).jar",
+      "sha256": "361583dd3019afe866bbebe9e1c825f596f2b51fe95300cbb49874fe5ff2bb54",
+      "size": 1972131,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/CreativeCore_FORGE_v2.12.32_mc1.20.1.jar",
+      "sha256": "3d2271f7d9d2e32fca46d19f3b6ab4372d30e0ea3eb26c809c23366e8d503e16",
+      "size": 1158417,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/creeperoverhaul-3.0.2-forge (Враж мобы Переработка криперов).jar",
+      "sha256": "212eb2a2d767f54fbfbac2336c63fe2bd1aae4d827ab358da329a746358b6dd9",
+      "size": 1456860,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/cupboard-1.20.1-2.7.jar",
+      "sha256": "63a1b6e8e9cffd53f283fae04f64b8d63dcaaa99fe0e383bb664f23ec87d395f",
+      "size": 25983,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/curios-forge-5.14.1+1.20.1.jar",
+      "sha256": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f",
+      "size": 398066,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/CustomItemAttributes-FORGE-1.20.X-2.0.0 (Техн. для изменения параметров предметов).jar",
+      "sha256": "ae2dbe98dc4f036d86a66322c1d7b9fe2e4cad658037ed6ded2f2d0b6a76daf5",
+      "size": 211591,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/CustomSkinLoader_ForgeV2-14.20 (Технический для скинов).jar",
+      "sha256": "abf8038aff2e9654eaa5cfa440bf04373de5c69f7d35c34500397b9dd44f9e9e",
+      "size": 147002,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/defaultoptions-forge-1.20.1-18.0.3.jar",
+      "sha256": "125ec93b83b76c2abe05645a9230b019994ce8f247bd5428236795ba0ba84c66",
+      "size": 94649,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/dew_drop_daily_weather-1.0 (Техн. Управление погодой).jar",
+      "sha256": "2688f6445ab2514a613df04d908b1f25861fb120f08f99912ec893606f1b10ef",
+      "size": 12901,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/draggable_lists-mc1.20-1.0.1-rev.824b2f3.jar",
+      "sha256": "6c42ce3a95f7d48eec28693d4725a1ef8584f1955f90e4f03b15622bd53bc598",
+      "size": 93320,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/drippyloadingscreen_forge_3.1.5_MC_1.20.1_foc-compat.jar",
+      "sha256": "833e4a3855ebfd3a034eee9cd28377c3d144a462d1ae97ea2aafccb208882d96",
+      "size": 281364,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/DripSounds-1.19.4-0.3.2 (Звуки капель).jar",
+      "sha256": "bac12d4f22f571fc887bc662266c628b47fa296e41116de839dc8963051ed4ec",
+      "size": 79003,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/dummmmmmy-1.20-2.0.2 (Техн. маникен для теста урона).jar",
+      "sha256": "38e7acada81316b761591dc23c70cd14e67b61cd2b1f4dabfe56934d4093eb3a",
+      "size": 360106,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/dungeons-and-taverns-3.0.3.f[Forge] (Генерация данжей).jar",
+      "sha256": "42b99957a853d4f1bd61ab7b34bde6920855c3955eae2774ecbd12fb7034bd09",
+      "size": 13127334,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/dynamic-fps-3.7.7+minecraft-1.20.0-forge (Технический уменьшение нагрузки в свернт. состоянии).jar",
+      "sha256": "4aac2f0760ea7b1e8a84ecdd94c9ec71643d64d1170b9ab29988724ddfb0e322",
+      "size": 342609,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/dynamiccrosshair-7.4.4+1.20-forge (Прицел).jar",
+      "sha256": "090e5e3955262c18ee1ffa6ab692d85fcd2a4feb1ff86517335607f292b4c39a",
+      "size": 366112,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/eatinganimation-1.20.1-5.1.0.jar",
+      "sha256": "506ffc2e2bcc5709c8121382c5d0428ca642ceaeebe2a9169c9b0475a83c657c",
+      "size": 294792,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+      "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
+      "size": 1320675,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/EnchantmentDescriptions-Forge-1.20.1-17.1.18 (Визуал описание чар).jar",
+      "sha256": "a2dee062bf3dcb8d4cd34b20cea72477d40fa9b2fdbb3234b2556aa661166b9e",
+      "size": 69356,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/endergetic-1.20.1-5.0.0.jar",
+      "sha256": "b2bfbe7c4ce82a0b0889ad7eb26d447991b8eab1ee4bb56f0900775ebb09790c",
+      "size": 15369075,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/endermanoverhaul-forge-1.20.1-1.0.4 (Вр. мобы переработка эндерменов).jar",
+      "sha256": "18f9f0bf3a9b4f77ad6913c28ccb927cde24f5d19524152cfe79ebb3dcccacc5",
+      "size": 1208062,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/endrem_forge-5.3.3-r-1.20.1.jar",
+      "sha256": "19295ca4a798f2e813f359fa376f586bc57fadacd78b7e32440257f9f8bf2557",
+      "size": 889634,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/entity_model_features-3.2.4-1.20.1-forge.jar",
+      "sha256": "0984570913a154ef65ebca54ac797fec11721c5e24aeceeb285b8ca2f562b35e",
+      "size": 752458,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/entity_sound_features-0.8.1-1.20.1-forge.jar",
+      "sha256": "53ff3393300134717592d24651aab61844147bf9850e67c24eebaae687245f64",
+      "size": 282594,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/entity_texture_features_1.20.1-forge-7.1.jar",
+      "sha256": "96b70f55efc64e5149ff977f065385d1634b8cbb71be856a0c7261c62c92f18c",
+      "size": 944851,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/entityculling-forge-1.7.0-mc1.20.1 (Техн оптимизация спавна сущностей).jar",
+      "sha256": "b15caa9b329641097b063271b4187cad6c5f14a1d38cda0b9759240e5b42b3ee",
+      "size": 71441,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/every_combat.jar",
+      "sha256": "ff7d8c908eca4c72349049f26f24c29b1528e184821f5c8856a4722192967016",
+      "size": 13763,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/explosive-enhancement-1.2.2-1.20.x (Визуал улуч. взрывы).jar",
+      "sha256": "2a98b3f820b48c156e2495c28b994cf2835da172db852de6dd24bdef3b8de589",
+      "size": 102550,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/extrasounds-1.20.1-forge-1.3 (Звуки инвентаря, скроллинга и тп).jar",
+      "sha256": "0fb6fa5fc7a37f3df58b70c048c74b8eece24daf4acc7e874996d6861efbfa88",
+      "size": 202566,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Fallingleaves-1.20.1-2.1.0 (Визуал падающие листья).jar",
+      "sha256": "46c1d4d94780ffad392b6139d4b0e535d399a310d9884c1f13230f31d43350a7",
+      "size": 130363,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/fancymenu_forge_3.9.9_MC_1.20.1.jar",
+      "sha256": "686253f50d103e21cc04b8710ab9ba4ba788916ad852620040308f3f08512fab",
+      "size": 26174014,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/fantasyfurniture-1.20.1-9.0.0.jar",
+      "sha256": "11035b688bb1018a7ebfdaa868ffe6ace87e533b678dcf3b689c15f79fe1af2c",
+      "size": 3202951,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FarmersDelight-1.20.1-1.3.2.jar",
+      "sha256": "47aed94bb9192c4978fe199f9d3ca5895aeccfbe5b5a0869fdf3aa011c2641f7",
+      "size": 3313327,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Feature-Recycler-forge-1.0.1 (Техн. оптимизация генерации биомов).jar",
+      "sha256": "d5998f8189e00de79f001a172a8ee2ae122168b79a47d3e14567f73a89b9b040",
+      "size": 10082,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Female-Gender-Mod-forge-1.20.1-3.1.jar",
+      "sha256": "5a2515cc70b27e7aa536c5c8ae570d396f68dc6ebac305f8679fb12036acfa2f",
+      "size": 255435,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ferritecore-6.0.1-forge (Техн. уменьшение потребления ОЗУ).jar",
+      "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
+      "size": 123034,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_artifacts_balance-1.0.2.jar",
+      "sha256": "9cf5c7f30425e6366263f722367ac50f950ec41298d55fd333811c069cd5eb79",
+      "size": 21213,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_auth_core-1.0.3.jar",
+      "sha256": "833b533835fbfb54dfd6565ac1ed887bca50afb3de9c5af2b5004ddeb99dac3f",
+      "size": 22864,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_iceandfire_balance-1.0.2.jar",
+      "sha256": "39b328c5e911987c4f4a997a6280cee723001e4bcbbee22398362f49356a7321",
+      "size": 12554,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_mob_balance-1.1.0.jar",
+      "sha256": "91ef446543ed9f4744d910ce11acac5485b68636fd4489397fdcac48ac37fa8a",
+      "size": 6882,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_origins_ui-1.1.0.jar",
+      "sha256": "be353b893284d48da2876865792b6e208f7fa67ec268f85453a3c37585a99cfe",
+      "size": 25199,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_real_weapon_damage-1.0.3.jar",
+      "sha256": "cb75644d8423bb287ecd7ac22350f0d79b0d7477ca5e4705a27228b87f57e7f0",
+      "size": 20010,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_realcamera_bettercombat_compat-1.0.31.jar",
+      "sha256": "a57bfa2a382b22c52fd1a5c28d35dd23f73b729a3e0599e6bce872d336017441",
+      "size": 34631,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_spell_balance-1.0.12.jar",
+      "sha256": "e31352cada0cac680305bbab8025395f38fab1ef68184a104694fa08ab834d5e",
+      "size": 90518,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/foc_weaponry-1.0.25.jar",
+      "sha256": "11ca73176ffbdbd7958bec841c9f7ee43b26d298af1b501b71ade818fd0ff41d",
+      "size": 1245256,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Launcher-Update-Bridge-1.20.1-1.0.0.jar",
+      "sha256": "f2d8a75a098660efe09999ff04a65013e5c7fd3f55eacf435363c28a5c12fbc6",
+      "size": 12171,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Midnight-Deal-1.11.0.jar",
+      "sha256": "67511b310f685c16934d1dae2a90c53f95fa48241374bdade5b4c902404882b0",
+      "size": 10182915,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Mob-Health-Bar-1.20.1-1.0.1.jar",
+      "sha256": "3be83fb0305af17006fad50a191c2a7acb9bf6d1089e6c75d809d124f0622198",
+      "size": 12908,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Night-Raiment-1.20.1-1.0.5-per-piece-bonus.jar",
+      "sha256": "9c534f380a154c78386de3300de91278f4343d009e8f224c9dba32a2b3b28f7d",
+      "size": 34723,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Paradoxica-1.1.2.jar",
+      "sha256": "15e1ae51be2b5b62f0c9f66908fde1e47971b90d0a53ab06b47ebd9387ad9be5",
+      "size": 248157,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Paradoxica-Sudden-Strike-Patch-1.0.1.jar",
+      "sha256": "c6dbc7ca137bd8f93f8dbec1de4d9604d3c464a437fc787e59bb9a83dd1a70be",
+      "size": 4910,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Player-State-Fix-1.20.1-1.0.4.jar",
+      "sha256": "524eb8d66a4706546d27b67ddfdaa8061cda5d59981ac2b65990126958065e91",
+      "size": 9650,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-PST-Fix-1.20.1-1.0.8.jar",
+      "sha256": "a92264cbfcb7cd7ba3dcfcbc54cff1f5964e77f7be97fd8a2b2e95778e4548d1",
+      "size": 42779,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-PST-Progression-1.20.1-1.1.13.jar",
+      "sha256": "2c7cb56bf5a80e8a6cac7de49c13fb475d86338200bacc13c4735f9509e8ab11",
+      "size": 322694,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Relics-Fix-1.20.1-1.0.3.jar",
+      "sha256": "2299c07cd193ac9276f00646e10f405f29a6c757d22e8a9ebd133ebcab7e140e",
+      "size": 9675,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/FoC-Server-Lock-1.20.1-1.1.0.jar",
+      "sha256": "d83358e0eafb4b6fdff68323dbdc3836c9fc67fbe3308b7bd7834695e60567af",
+      "size": 16265,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ftb-library-forge-2001.2.2 (Ядро FTB).jar",
+      "sha256": "4dec69ffeeca20893fc310889986990d76ebd4da5469d02999bc860f467d81cc",
+      "size": 778628,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ftb-teams-forge-2001.3.0 (Ядро FTB).jar",
+      "sha256": "e1db97a48a54bdb3dc9116fbba4a0c3779d0ac077ce228208d7b2edabc95b325",
+      "size": 245089,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/geckolib-forge-1.20.1-4.7.1.3.jar",
+      "sha256": "c1e8df4f36f64275bd4c7a3e6ee8d072522c4ef6e5bb13da1c122f39e00524c9",
+      "size": 1012499,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/global_packs-forge-1.19.4-1.16.2_forge.jar",
+      "sha256": "077aedf66d7b1850a128df622734c802ad2e629e4eeec215ece218c41ea26483",
+      "size": 19367,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/gml-4.0.10-all.jar",
+      "sha256": "f99ed0c1df92ae4168e9831962581ccd4de7d77fcb96e951205c133eef922962",
+      "size": 11125462,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/golemsarefriends-1.20.0-1.0.1.jar",
+      "sha256": "0ac23af0922f35b25cea6ed2086a60ce9df178ec14e555149e6ce5abdf373a37",
+      "size": 13051,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/hearth_and_home-forge-1.20.1-2.0.1 (Декор в ванильном стиле).jar",
+      "sha256": "abab7fd2849d8e4421f56d12ad4ae9f7ef521125654be5cada16c7ec1f0d1b8e",
+      "size": 1184224,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Highlighter-1.20.1-forge-1.1.9 (Визуал  подсвечивание новых предметов в инвентаре).jar",
+      "sha256": "8389c409257541c06789cd2287725d3df173168d9a0ebb9ff44c9b319e8b8026",
+      "size": 29438,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ice_and_fire_spellbooks-2.3.1-1.20.1.jar",
+      "sha256": "5bbf33d80821c748f48854c9d79cd4bd7a93cd466ef45789d1d704dbaabae99c",
+      "size": 162612,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/iceandfire-2.1.13-1.20.1-beta-5.jar",
+      "sha256": "2b80245fc9b7d6fdc61d71f9892f4c6114eb7f303f65634845aaab25f84d1e82",
+      "size": 21854126,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Iceberg-1.20.1-forge-1.1.21 (Ядро).jar",
+      "sha256": "2a5a0e40aab3df185626978f03dd0ba971f1b71872d26d2852d10857c0a5de72",
+      "size": 133685,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ImmediatelyFast-Forge-1.3.2+1.20.4 (Техн. оптимизация).jar",
+      "sha256": "ce52ac5079dd1937d73e45bf8db1666e616bac5c202a7b553e5253034c5584d7",
+      "size": 449076,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ImmersiveUI-FORGE-0.2.2 (Визуал ивентаря).jar",
+      "sha256": "8b6bad9c67c7b34e9bbaf4b5f4c39cd0ca9102eb48fc9c9a56cf05d467f64d83",
+      "size": 199870,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/integrated_api-1.5.1+1.20.1-forge (Ядро).jar",
+      "sha256": "1f6d10d445dc559d72a79b27c0d57bb90e737609d2269387afa2077ffbf12dfa",
+      "size": 683711,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ironchest-1.20.1-14.4.4 (Механики Мод на сундуки).jar",
+      "sha256": "6bc75f288d2e8158d2e23c6881a1b341a894c38bab129ca0f20db6abd59d373f",
+      "size": 311290,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/irons_spellbooks-1.20.1-3.4.0.9.jar",
+      "sha256": "0508d3e12e8d93a1159b94cf6545e7478114d1739eaaf5b79e6ed4b5725373dc",
+      "size": 8838604,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/IronsRecipeAdditions_1.20.1_modversion_2.2 (Аддон для iron's spells).jar",
+      "sha256": "9141f53a92a218deb4e2e87536cc307d9109ceb2f3745a8e8812e9ea72fe98a9",
+      "size": 8695,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ItemBorders-1.20.1-forge-1.2.1 (Визуал  выделение важных и редких предметов).jar",
+      "sha256": "6826a7805f85aa3d0e4e6c1daa474ccfc641313ec0532392e12644edbb416720",
+      "size": 20829,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ItemProductionLib-1.20.1-1.0.2b-all.jar",
+      "sha256": "ab0aab537f382600c2c40c44877890b8a6ce57b55e3d9816e167e51e0cf90d76",
+      "size": 170932,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/jei-1.20.1-forge-15.20.0.112.jar",
+      "sha256": "2d3a86f503dbde51afa5142951525c37e227016ce8d9e7dfd10bbdd9233f0204",
+      "size": 1385600,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/JustEnoughProfessions-forge-1.20.1-3.0.1 (Аддон для jei).jar",
+      "sha256": "13e2012375d16663192cf67f5e4139335e5dcbeaf2adf7e8a4816b013802f96a",
+      "size": 24607,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/JustEnoughResources-1.20.1-1.4.0.247.jar",
+      "sha256": "cfea462b5ab4f15b38da6003f7d151bdbb68fa5af30084ae81b8ac0970d7aaae",
+      "size": 276231,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "sha256": "e78686b92c3761ec26eb9d3c53efdd3d6ca77981cbd3723995e1163b7103ae0b",
+      "size": 625185,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/kubejs-forge-2001.6.5-build.16.jar",
+      "sha256": "3de6b7267d3aab981848ed54d3afe7edf20532fa4060631fd6fffcd99ac5f3d5",
+      "size": 1654660,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/languagereload-forge-1.20.1-1.0.1-all.jar",
+      "sha256": "d8c7b892ce254dfd4b8722e5b45a5e688423970a5f5cefee96b7303ff44ceec6",
+      "size": 201732,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/letsdo-API-forge-1.2.15-forge (Ядро для готовки).jar",
+      "sha256": "d08b99df112cfffb46e289635c79d4ac8397223320abd6469b47e202e23fa28c",
+      "size": 1440591,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/letsdo-bakery-forge-1.1.14 (Еда пекарня).jar",
+      "sha256": "8e6117a33333efccda07ea2a4d55444667170843cb0bf9b7796152403c20db7f",
+      "size": 1711236,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/letsdo-brewery-forge-1.1.9 (Еда пиво).jar",
+      "sha256": "a203b09f0e91c8b78ae894e78340f41c8046975781689087f43f9129e96fdd99",
+      "size": 2208810,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/letsdo-nethervinery-forge-1.2.19.jar",
+      "sha256": "c8d1b795468ecb4a82fbafd3b9134881dbe8e6108b62ba4060922448ab0e0cd4",
+      "size": 650907,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/letsdo-vinery-forge-1.4.41.jar",
+      "sha256": "5d7e11f6e2218562ce75d60788fdcfc9ccf59e4532757c18bf37759d5fc739ee",
+      "size": 2041283,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/lionfishapi-3.0.jar",
+      "sha256": "d2fdaf7e9bc53fde7da4a86ab17018a3ed6c16fc2d46de5054e5a83e2bef7871",
+      "size": 101931,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/lootjs-forge-1.20.1-2.13.1.jar",
+      "sha256": "c1672330605a691b8a91b3a4d252f2d3a280f252874f1fc5fdd7cad07d13b719",
+      "size": 242267,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/lootr-forge-1.20-0.7.35.91 (техн. индивидуалки на сундуках).jar",
+      "sha256": "def6592e0162ea369d63e825abf0e6c60927eafed82772e821dc01cd9c4a5479",
+      "size": 458532,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/mcw-furniture-3.3.0-mc1.20.1forge (Декор).jar",
+      "sha256": "65562bcfcf1deb473e68f9f06605f43a521670e2ce3712a60b91bbd2e479fe7c",
+      "size": 1882792,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "sha256": "933e2a7e79c4594f965f7f7d00b1f28a98ec2a180ad8f9f90310a266fe5cf5d8",
+      "size": 37178,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/memoryleakfix-forge-1.17+-1.1.5 (Оптимизация утечек ОЗУ).jar",
+      "sha256": "925c3db4e1d085a43c4d2beaa4eec18367c22abc90c2ce8594b8a129fd3f28dd",
+      "size": 227925,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/miners_delight-1.20.1-1.4.5-backport.jar",
+      "sha256": "a335a6d61b87b9656584ea003972d98f3044e6a90e54627a527f0f5ef52f0ae3",
+      "size": 548776,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/modelfix-1.15 (Техн. маштабирование текстур).jar",
+      "sha256": "35f27982242a3ea58c526204a28704ddf355d19bb2e9b0ff10f9585c255a4f16",
+      "size": 45246,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/modernfix-forge-5.19.5+mc1.20.1 (Техн. крутая оптимизация).jar",
+      "sha256": "bb44e97f5363688fa7ce15884fb80df12a561219e65e8bbb75c28afd8a4f0f6d",
+      "size": 778617,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/moonlight-1.20-2.16.34-forge-foc-threadsafe-1.jar",
+      "sha256": "55da356097a812af816203b58ce09a805a78dabdf185cd8d2d1300a3419e7be1",
+      "size": 1422953,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/MouseTweaks-forge-mc1.20.1-2.25.1 (Техн.).jar",
+      "sha256": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08",
+      "size": 76237,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/namepain-1.5.0 forge-1.20.x (Визуал ник показыват состояние персонажа).jar",
+      "sha256": "820f0595bc02902262705fd7735bae74e5812b6909441877517fffb4a0c37460",
+      "size": 25172,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/nanhealthfixer-1.20.1-0.0.1 (Техн. фикс макс. сердец).jar",
+      "sha256": "d03619bda583c0d52848d9225b781d022d406cecf02da2d5703bead81803fe1f",
+      "size": 3010,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/naturalist-forge-4.0.3-1.20.1 (Др. мобы).jar",
+      "sha256": "40110a85093a08d94752f0d9e47af0109be2a1f9b66f5dd25ee4df07468bfe62",
+      "size": 3343324,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/nocube's_better_blast_furnace_1.0.1_Forge_1.20.1 (Механики можно плавить сразу рудный блок).jar",
+      "sha256": "3263814354e260b6407ea442ec73771f6902f20ab85b1c6eaeffb433e24c14e5",
+      "size": 8814,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/noisium-forge-2.3.0+mc1.20-1.20.1 (Оптимизация скоряет генерацию чанков).jar",
+      "sha256": "b0b020250c81e8cce7776c3dc8f7085f269e2007570d5fbd492c4497ad60685c",
+      "size": 218152,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/notenoughanimations-forge-1.9.3-mc1.20.1.jar",
+      "sha256": "c2e0c9f70a33902ece8553053b8cedb31f6e3b972d612032ca0411a9901c151f",
+      "size": 453719,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/notenoughcrashes-4.4.9+1.20.1-forge.jar",
+      "sha256": "e944656f2671b87d52af9756c48bcfb5b90956bef1a40bf1b5fcae731a367518",
+      "size": 134885,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+      "sha256": "5bb146c691f2c5054752f006a61aab6335ecb1cd9718a9643733de5367971047",
+      "size": 424035,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/oculus-mc1.20.1-1.8.0.jar",
+      "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
+      "size": 2851119,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ok_zoomer-forge-5.4.0-beta.8.jar",
+      "sha256": "38b4d0cc99c481d46ea0420e906b5a26843f8215a1bfd49a0501e35c0edea624",
+      "size": 520782,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/OpenLoader-Forge-1.20.1-19.0.4 (Техн. для datapack).jar",
+      "sha256": "30e7baa36edd497801eaca4acb3d1cebe77eae7feca675ac85045dc39a99c6b8",
+      "size": 23938,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/origins-forge-1.20.1-1.10.0.9-all.jar",
+      "sha256": "5244b8b4434cd1bb6f4ebb71a36008218e700ed3245c14f867b8dc5487137c64",
+      "size": 2307868,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/particle-rain-2.1.5 (Техн. оптимизация частиц дождя).jar",
+      "sha256": "56c70b83042dbb2241e8714d503254f4e19d50c83ff16cbd0bb43a5deab53736",
+      "size": 720329,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/PassiveSkillTree-1.20.1-BETA-0.6.14a-all.jar",
+      "sha256": "3658d26ed8bd124c9ae51388bb68a2db6055761a16281e23dd3e070cbbe44bf2",
+      "size": 2919336,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Pehkui-3.8.2+1.20.1-forge.jar",
+      "sha256": "54210f454c166f65a1bcbbfe4ea52e6f73e07844a793c7132f1af4076a0f42fc",
+      "size": 671605,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/personality-1.20.1-4.1.0.jar",
+      "sha256": "2eb9e7820f75d9e766b9eb176fc95a0b943f9a688b0158ac85ed1ff9d88613ac",
+      "size": 321702,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/PickUpNotifier-v8.0.0-1.20.1-Forge (Визуал показыавет какие предметы подняли).jar",
+      "sha256": "b343d2068413d895deb45417f56d2c823fe07b173879c1b03575eebfc189011d",
+      "size": 102164,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Placebo-1.20.1-8.6.3.jar",
+      "sha256": "1cdf906cfbcbb5e5be2ef1bb721f79a24b01bd2ac559c8cdbfb7693f62421571",
+      "size": 282474,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691",
+      "size": 181437,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/polymorph-forge-0.49.5+1.20.1 (Техн. помогает с дублями рецептов).jar",
+      "sha256": "520d8e6fcb7626fe1bfcba1591d3d1a507c9363040451e4202e684b4b15fceee",
+      "size": 298759,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/portfolio-1.20.1-1.4.0-forge (Предметы новые картины).jar",
+      "sha256": "3b0d74b76f0aaf44b9921205f7a5c16cdfb653cd6339f6aa22f8e4fa3bd20db1",
+      "size": 261221,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/PresenceFootsteps-0.1.0-beta (звуки ходьбы).jar",
+      "sha256": "908fdefc3846d1cebcc3bb9e7f4e7aa0d663c15df7275402a5079d63bd38a558",
+      "size": 5651171,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Prism-1.20.1-forge-1.0.5 (Ядро).jar",
+      "sha256": "b1a576f920faeb2175f693e3ee7ba9e5ff0bcf0e404da29f1824ea3c66efd240",
+      "size": 52205,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/PuzzlesLib-v8.1.32-1.20.1-Forge.jar",
+      "sha256": "614741d2c4eeac0f01ceba8e6d0bbd134e2a501edf93a958da78e700933a8490",
+      "size": 1342204,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/quark_delight_1.0.0_forge_1.20.1 (Едаготовка еды из добавленных quark).jar",
+      "sha256": "1ca98c2776cbb0f4feb226d26adda6e393cb5a393d74b1397f4f2136e563193b",
+      "size": 72096,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Quark-4.0-462.jar",
+      "sha256": "c90b96f049d92825c4a103721988c80d72e5ad380d17be46a0f53e114874c478",
+      "size": 14935230,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/radium-mc1.20.1-0.12.4+git.26c9d8e (Техн. на оптимизацию порт lithium).jar",
+      "sha256": "b42584e2672d6b5329959ec2b0f342395b19389fed0ee4d86ea71072f42f77a0",
+      "size": 713454,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/raised-forge-1.20.1-4.0.0 (Визуал Хот бар).jar",
+      "sha256": "e552728b79058895b2a6c478e9a3a6fc7004edbec58ed64e96bb50777503a4e3",
+      "size": 76488,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/rarcompat-1.20.1-0.1.7 (Техн. Artifacts & Relics).jar",
+      "sha256": "6d1295d2be8ebb2779b2aca5e8fe8559fd09308e3881cec0722f89b2c725d754",
+      "size": 69034,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/realcamera-1.20.1-forge-0.7.8-beta.jar",
+      "sha256": "44991edbd131724c892fc7c5c5e8bc77c5c9e642f0c48ed08ba0250116fcad6b",
+      "size": 280530,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/relics-1.20.1-0.8.0.7 (Предметы реликвии).jar",
+      "sha256": "3f6b0fe86a4cd3a63f8b7ad1526a612b09b3ddacfbdb1a09be9f3959b9de0c3e",
+      "size": 1495156,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "sha256": "c404b9e5cf8595427a72d4ca6ee5730289168762b463f169be3ae5dfe3727ded",
+      "size": 136923,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8",
+      "size": 432753,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/rhino-forge-2001.2.3-build.10.jar",
+      "sha256": "fed2211429301bf043864183cab9ab8e92d4cc4dbb9e488ce6c75217c54584a6",
+      "size": 1798244,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/saturn-mc1.20.1-0.1.3 (Техн. на оптимизацию).jar",
+      "sha256": "7e6dcc7c2b0db19ec2f965fac91a49e13dcc611f2d86f6bb56d7d68da901aaf8",
+      "size": 92319,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/screenshot_viewer-1.3.2-forge-mc1.20.1-foc-fade.jar",
+      "sha256": "e2a54ad66edce711e3a04b14c8ea2c3c68c4b88698cc055296ec3e6c3e660c07",
+      "size": 113626,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Searchables-forge-1.20.1-1.0.3 (Ядро).jar",
+      "sha256": "c1a76e93886210574d3f298c0461241fb711e52ac22c7a04d3236840f29e6576",
+      "size": 77732,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/ShoulderSurfing-Forge-1.20.1-4.11.1 (Техн. вид от 3го лица справа).jar",
+      "sha256": "a2d22b66349d339e0782a10c151957af5ae48031abbd95f7b03f5d003cd5d6f9",
+      "size": 213806,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/shulkerboxtooltip-forge-4.0.4+1.20.1.jar",
+      "sha256": "2bf211c1cd627cab26ddaf54624b4968c360ec00c127040f112aac644089e96f",
+      "size": 221121,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/SimpleRPC-Universal-3.3.3 (Техн. показывает активность в дисе).jar",
+      "sha256": "74edbdfc0dc21d5b9d257f97a967a10a88b66e6444e05c63c2d6d8b4da806fc9",
+      "size": 214943,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/smallships-forge-1.20.1-2.0.0-b1.4.jar",
+      "sha256": "f79a4dcab3e1c8e4d14467cbfa655f4a16e0f0d0901e8f9bde9e3f5e36735eff",
+      "size": 1816687,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/smoothboot(reloaded)-mc1.20.1-0.0.4 (Техн. ускорение загрузки игры).jar",
+      "sha256": "5a0d2682493ffa7b140a7b81f0d1e70c7536c97969397cf9e718e31391b5b9d5",
+      "size": 41044,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/smoothchunk-1.20.1-3.6 (Техн. сохранение чанков).jar",
+      "sha256": "f9fec94bac4ab2bcf6e5623cee596303cf1ea47bc4a18716a90eb4309d8450f7",
+      "size": 12011,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/sound-physics-remastered-forge-1.20.1-1.4.5 (Звук объёмный).jar",
+      "sha256": "1c541a7859d4a26bd1abc7d4e06910db65d7c16717d7b4810cac0314ebc38523",
+      "size": 196564,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/TerraBlender-forge-1.20.1-3.0.1.7 (Генерация).jar",
+      "sha256": "8f00e766f5a75aa52809cf9825817e874ac4b21b5d3f52fb02d40a19ec0b759b",
+      "size": 107534,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/titlebarchanger-forge-0.3 (Техн. название сборки).jar",
+      "sha256": "0ba5b677388294ff0aabe4a48461c4c4cab58ffb6304348b6c86c7ff65534b6c",
+      "size": 176967,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/too_many_bows-forge-4.1.1-1.20.1.jar",
+      "sha256": "1017810b43237d0910895294e8107bdbb5e46a0b3148a476749b7e242b6a94f0",
+      "size": 1012401,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/TravelersTitles-1.20-Forge-4.0.2 (Визуал Титры биомов).jar",
+      "sha256": "e72bcce5e31ab2d5f09eff53697969b32e56c35801b3014e03d558b442b9d38b",
+      "size": 228191,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/u_team_core-forge-1.20.1-5.1.4.312.jar",
+      "sha256": "98d150e281334102846ca0f50d1ef5f72c8934826053e5bffdbc6a979fdd2aa6",
+      "size": 587610,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/valhelsia_core-forge-1.20.1-1.1.2 (Ядро).jar",
+      "sha256": "d52ae1941c76ff57ee61943b38b5ae95a1e4bffa39604946bee1cfe52964f690",
+      "size": 203313,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/visuality-forge-2.0.2 (Визуал частицы с мобов).jar",
+      "sha256": "336a9f11f9d55f2d600c56ec1a8dcba93b80534fc749b143096e129c9c9c985d",
+      "size": 215750,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/voicechat-forge-1.20.1-2.5.31.jar",
+      "sha256": "2d9b13d80974d6029369686bc2300ea9cd30289fae52b9751cc13af9d494267b",
+      "size": 8206523,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/weaponmaster_ydm-forge-1.20.1-4.2.3.jar",
+      "sha256": "da63af14bd71b0be80376ed5ccc4e3669214e0e8baa5c7c1bbfa83d567513e9a",
+      "size": 283977,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/worldedit-mod-7.2.15.jar",
+      "sha256": "17db6b3e94f52d25426684663e1e1846823cbb7907f1c365ac329e5bc7bfaf2c",
+      "size": 5825402,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/WorldEditCUI-1.20+01.jar",
+      "sha256": "6e1edd597a62bd70b552925b0d97fcee4527d93300d107554aaf087b98348f09",
+      "size": 168681,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Xaeros_Minimap_25.2.6_Forge_1.20.jar",
+      "sha256": "090a643d90ed960d548759e1f158c67e80ef76a69a1f188eb2c74072b54a619a",
+      "size": 1704662,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/XaerosWorldMap_1.39.9_Forge_1.20.jar",
+      "sha256": "b73c03b760b720dc30284d5cf3bbc8e3409414225a987ebc2d02794327fa3ff3",
+      "size": 948532,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1 (Отключает окно об эксперементах).jar",
+      "sha256": "6dacf5ea0cec5d6d53e7d002d4a06ac4fa5f7ec665f3932bb6566136e6a7f8ed",
+      "size": 568278,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YetAnotherConfigLib-3.5.0+1.20.1-forge.jar",
+      "sha256": "0b04232b8647fa5a7527dc670bc25e03c416226d866ab100c4ff2a3c0d185c5b",
+      "size": 1151778,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YungsApi-1.20-Forge-4.0.6.jar",
+      "sha256": "101c30d01d0cf9d86190f578eb1e43bd06b64092e95662a00ef52946f472c7b1",
+      "size": 370524,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+      "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+      "size": 792381,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YungsBetterEndIsland-1.20-Forge-2.0.6.jar",
+      "sha256": "05c2f43a67116f0bbca32d903b55ce1655b9319ed6554080de02bd1d0c232a83",
+      "size": 387111,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YungsBetterJungleTemples-1.20-Forge-2.0.5.jar",
+      "sha256": "728c0a807742356887edf7d4f736b3870b7c84007ec9c495c27da1dc0b61078d",
+      "size": 806652,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+      "sha256": "6632e7bcc58325098e85bcb755483de7cb3af92a5ea548f3b5c0162cbf0dc1dc",
+      "size": 492998,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YungsBetterWitchHuts-1.20-Forge-3.0.3.jar",
+      "sha256": "24b3bdc844755e8a39571b5000d8dd829543f7b150d154016ccd926e47d06a71",
+      "size": 179190,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/YungsCaveBiomes-1.20.1-Forge-2.0.1.jar",
+      "sha256": "39455517e8c9c0dad8de47b10924c64c3b52f985730d1c3bf8fda91d7ab55700",
+      "size": 12927797,
+      "mode": "managed"
+    },
+    {
+      "path": "mods/Zeta-1.0-30.jar",
+      "sha256": "7b68e166061c6ea0a8ac1585b0ae222f12bdd350728f3d797b520c1e915a310b",
+      "size": 1006574,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/3d_items-v5.zip",
+      "sha256": "236f955d95481087698ae9c4d555273e5e3d3e0bbd0000655fa950066d652acb",
+      "size": 136137,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/Better Crops.zip",
+      "sha256": "115e5a3a2e86b0a89329ec4e0afd5227517dea22c8e0844366fc55884d029038",
+      "size": 18873,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/better_enderdragon-1.20.1.zip",
+      "sha256": "bbedc1d7b4d9286bf0870878b85b209d7402358cce8b45921bb79ce3fc473147",
+      "size": 43298,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/boss-refreshed-v1.3.zip",
+      "sha256": "fb79cec41542c9d15866e7922aec86c2e10c57fb808f61dc394dace974d1e1a9",
+      "size": 389930,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/dark-everywhere.zip",
+      "sha256": "20d4c48c99ae620cc58a597045f89e4891e9dace3057afd9842c36846489dd03",
+      "size": 3246862,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/Eat Animations Extra Compat.zip",
+      "sha256": "dab91091fcd8793e626e141eeb7d0cdcefac47f3c06122bd08893257ffe57b59",
+      "size": 456837,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/Expressive Fresh Moves v3.0.1.zip",
+      "sha256": "887ffa3655ffa3e7e3a89471f4af32dd4dedd026b9a958363622c819c42a10bd",
+      "size": 322282,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/FoC_GameTextures_NoMenu_AshenDeepslate_GUI_DiamondFinal_1.20.1.zip",
+      "sha256": "6112823eb38d3d6940d3951bcfb58143a3ea12896bc757d4dfed2887524dc620",
+      "size": 14093457,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/FreshAnimations_v1.9.2.zip",
+      "sha256": "7ecee4567bd999ce6d45897b0b196a9342ff325f550031a15fffaaf81342dc1b",
+      "size": 516256,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/guiretextures-1.9.zip",
+      "sha256": "bbb950d9e9acad6329c0c3a4582fbe556b4ffa06c9625ac0bca9ef87fb636a0a",
+      "size": 545244,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/Just Fancy Torches v1.1.zip",
+      "sha256": "0f2a92d2b8b681fb0c2702c2510ead7165bd056f6cd8fadfe67340f27950185c",
+      "size": 96915,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/Low Fire.zip",
+      "sha256": "5779cd4b2e496e2cf644b42935120e572a1ab8d4194ef2d2c2c34a87a9e22c30",
+      "size": 41745,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
+      "sha256": "43cc829da5b7fcb569b30b8310b53bc5f4f12a4705a0a155a218ef405575ae39",
+      "size": 217991,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/Os' Colorful Grasses (Short).zip",
+      "sha256": "a366a2e7d505044aec434f8612eaf5ea546f09c9318a73a1d8f6679ecc136925",
+      "size": 181220,
+      "mode": "managed"
+    },
+    {
+      "path": "resourcepacks/Quark Programmer Art.zip",
+      "sha256": "41cb720cf256a12ea247b2f38068b363aa5b1675470c4b5aa66850701a78bc4d",
+      "size": 266434,
+      "mode": "managed"
+    },
+    {
+      "path": "shaderpacks/BSL_v10.1.3.zip",
+      "sha256": "185774628b5259c36255183fc1adeb0f64f89235f7ea2c826fa327d1112687a8",
+      "size": 1127026,
+      "mode": "managed"
+    },
+    {
+      "path": "shaderpacks/VanillaPlus_v3.2.zip",
+      "sha256": "513b705982edaa4433edc66b7ff044131e9212e8d599f6f2a1eece49003302c9",
+      "size": 441994,
+      "mode": "managed"
+    },
+    {
+      "path": "versions/1.20.1-forge-47.4.22/1.20.1-forge-47.4.22.json",
+      "sha256": "f708d5cdaad3276af9b87f661d42c76535bedf6c610cff32bd8d8b7997255221",
+      "size": 59874,
+      "mode": "managed"
+    }
+  ]
+}

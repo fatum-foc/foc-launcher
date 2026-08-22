@@ -2869,6 +2869,12 @@
       "mode": "managed"
     },
     {
+      "path": "mods/FoC-Xaero-Nether-Layer-1.0.0.jar",
+      "sha256": "f175dc5d39312155cfb4cf71613c04b4fc5b756f1c35d1183cc53f75d4755993",
+      "size": 6476,
+      "mode": "managed"
+    },
+    {
       "path": "mods/ftb-library-forge-2001.2.2 (Ядро FTB).jar",
       "sha256": "4dec69ffeeca20893fc310889986990d76ebd4da5469d02999bc860f467d81cc",
       "size": 778628,

@@ -19,7 +19,7 @@ const tag = "client-0.0.3";
 const root = new URL("./", import.meta.url);
 const canonicalManifestName = "stable.json";
 const canonicalSignatureName = "stable.json.sig";
-const backupManifestName = "stable-0.0.6-before-map-fishing-fixes-20260823.json";
+const backupManifestName = "stable-0.0.6-before-map-fishing-fixes-1.2.0-20260823.json";
 const backupSignatureName = `${backupManifestName}.sig`;
 const prerequisiteObjects = [
   {
@@ -37,24 +37,24 @@ const prerequisiteObjects = [
 ];
 const replacedObjects = [
   {
-    path: "mods/FoC-Xaero-Nether-Layer-1.0.0.jar",
-    hash: "f175dc5d39312155cfb4cf71613c04b4fc5b756f1c35d1183cc53f75d4755993",
+    path: "mods/FoC-Xaero-Nether-Layer-1.1.0.jar",
+    hash: "128decf65872ab1c3a400728ffd840a3a3442ecea87afe172fcbaa1ca411b4b3",
   },
   {
-    path: "mods/FoC-Fishing-Fixes-1.0.0.jar",
-    hash: "374fbef6f1c1da27afeedd7da755c3b5d9469b8926a227a8bd1bdc8e031bb95f",
+    path: "mods/FoC-Fishing-Fixes-1.1.0.jar",
+    hash: "07778bc4460583dd3d727c2671b2801d0643580be1d87328e237006f7419d88f",
   },
 ];
 const expectedObjects = [
   {
-    path: "mods/FoC-Fishing-Fixes-1.1.0.jar",
-    hash: "07778bc4460583dd3d727c2671b2801d0643580be1d87328e237006f7419d88f",
-    size: 14458,
+    path: "mods/FoC-Fishing-Fixes-1.2.0.jar",
+    hash: "bbcd6e5d18618c69abc13c25781594dfd97f1ec09424321a3b64ecbcc9335425",
+    size: 22229,
   },
   {
-    path: "mods/FoC-Xaero-Nether-Layer-1.1.0.jar",
-    hash: "128decf65872ab1c3a400728ffd840a3a3442ecea87afe172fcbaa1ca411b4b3",
-    size: 7197,
+    path: "mods/FoC-Xaero-Nether-Layer-1.2.0.jar",
+    hash: "b3a9f6881c2cf3185d1665473be832c20bfc9fb0b7f61df3af8797a2b6b7db6f",
+    size: 7377,
   },
 ];
 

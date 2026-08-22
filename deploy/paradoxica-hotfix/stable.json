@@ -2803,9 +2803,9 @@
       "mode": "managed"
     },
     {
-      "path": "mods/FoC-Fishing-Fixes-1.1.0.jar",
-      "sha256": "07778bc4460583dd3d727c2671b2801d0643580be1d87328e237006f7419d88f",
-      "size": 14458,
+      "path": "mods/FoC-Fishing-Fixes-1.2.0.jar",
+      "sha256": "bbcd6e5d18618c69abc13c25781594dfd97f1ec09424321a3b64ecbcc9335425",
+      "size": 22229,
       "mode": "managed"
     },
     {
@@ -2875,9 +2875,9 @@
       "mode": "managed"
     },
     {
-      "path": "mods/FoC-Xaero-Nether-Layer-1.1.0.jar",
-      "sha256": "128decf65872ab1c3a400728ffd840a3a3442ecea87afe172fcbaa1ca411b4b3",
-      "size": 7197,
+      "path": "mods/FoC-Xaero-Nether-Layer-1.2.0.jar",
+      "sha256": "b3a9f6881c2cf3185d1665473be832c20bfc9fb0b7f61df3af8797a2b6b7db6f",
+      "size": 7377,
       "mode": "managed"
     },
     {

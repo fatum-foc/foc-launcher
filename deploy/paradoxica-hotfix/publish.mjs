@@ -19,27 +19,19 @@ const tag = "client-0.0.3";
 const root = new URL("./", import.meta.url);
 const canonicalManifestName = "stable.json";
 const canonicalSignatureName = "stable.json.sig";
-const backupManifestName = "stable-0.0.6-before-integrated-paradoxica-midnight-20260822.json";
+const backupManifestName = "stable-0.0.6-before-midnight-scale-150-20260822.json";
 const backupSignatureName = `${backupManifestName}.sig`;
 const oldObjects = [
   {
-    path: "mods/FoC-Midnight-Deal-1.11.0.jar",
-    hash: "67511b310f685c16934d1dae2a90c53f95fa48241374bdade5b4c902404882b0",
-  },
-  {
-    path: "mods/FoC-Paradoxica-1.1.2.jar",
-    hash: "15e1ae51be2b5b62f0c9f66908fde1e47971b90d0a53ab06b47ebd9387ad9be5",
-  },
-  {
-    path: "mods/FoC-Paradoxica-Sudden-Strike-Patch-1.0.1.jar",
-    hash: "c6dbc7ca137bd8f93f8dbec1de4d9604d3c464a437fc787e59bb9a83dd1a70be",
+    path: "mods/FoC-Midnight-Deal-1.12.0.jar",
+    hash: "baf564e644997e2832d80c1e48f264f77b060fe3af59d009fe9e643969c44072",
   },
 ];
 const expectedObjects = [
   {
-    path: "mods/FoC-Midnight-Deal-1.12.0.jar",
-    hash: "baf564e644997e2832d80c1e48f264f77b060fe3af59d009fe9e643969c44072",
-    size: 10182612,
+    path: "mods/FoC-Midnight-Deal-1.12.1.jar",
+    hash: "b1e1e7b4ce2c5cd82d05d0b92bb8f1a4921c48efcc2f095b56790d3101858f4b",
+    size: 10184719,
   },
   {
     path: "mods/FoC-Paradoxica-1.1.3.jar",
@@ -236,8 +228,16 @@ for (const old of oldObjects) {
     throw new Error(`Current public manifest does not contain the expected object: ${old.path}`);
   }
 }
-if (manifest.files.length !== previousManifest.files.length - 1) {
-  throw new Error("Update must replace three files with two integrated files.");
+const retainedParadoxica = previousManifest.files.filter(
+  (file) =>
+    file.path === "mods/FoC-Paradoxica-1.1.3.jar" &&
+    file.sha256 === "0552faaea1ed5701750088212d95f6bfeeccb475c77af673c8851d27a45e3925",
+);
+if (retainedParadoxica.length !== 1) {
+  throw new Error("Current public manifest does not contain integrated Paradoxica 1.1.3.");
+}
+if (manifest.files.length !== previousManifest.files.length) {
+  throw new Error("Midnight scale update must replace exactly one file.");
 }
 
 phase = "rollback-backup-upload";
@@ -247,8 +247,8 @@ phase = "content-object-upload";
 for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
 
 const suffix = (process.env.GITHUB_SHA ?? Date.now().toString()).slice(0, 12);
-const stageManifestName = `stable.json.next-integrated-${suffix}`;
-const stageSignatureName = `stable.json.sig.next-integrated-${suffix}`;
+const stageManifestName = `stable.json.next-midnight-150-${suffix}`;
+const stageSignatureName = `stable.json.sig.next-midnight-150-${suffix}`;
 phase = "staging-pair-upload";
 const stageManifest = await replaceStage(stageManifestName, manifestBytes);
 const stageSignature = await replaceStage(stageSignatureName, signatureBytes);
@@ -295,7 +295,7 @@ try {
   }
   if (!publicVerified) throw new Error("Anonymous public signed pair did not converge to the new bytes.");
 
-  console.log(`Published integrated client 0.0.6 update: ${manifest.files.length} files.`);
+  console.log(`Published Midnight Deal 1.5x visual scale update: ${manifest.files.length} files.`);
   console.log(`Manifest SHA-256: ${sha256(manifestBytes)}`);
   console.log(`New objects: ${expectedObjects.map((entry) => entry.hash).join(", ")}`);
   console.log(`Old objects retained for rollback: ${oldObjects.map((entry) => entry.hash).join(", ")}`);

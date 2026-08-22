@@ -2803,6 +2803,12 @@
       "mode": "managed"
     },
     {
+      "path": "mods/FoC-Fishing-Fixes-1.0.0.jar",
+      "sha256": "374fbef6f1c1da27afeedd7da755c3b5d9469b8926a227a8bd1bdc8e031bb95f",
+      "size": 12287,
+      "mode": "managed"
+    },
+    {
       "path": "mods/FoC-Launcher-Update-Bridge-1.20.1-1.0.0.jar",
       "sha256": "f2d8a75a098660efe09999ff04a65013e5c7fd3f55eacf435363c28a5c12fbc6",
       "size": 12171,

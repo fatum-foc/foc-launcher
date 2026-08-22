@@ -19,24 +19,28 @@ const tag = "client-0.0.3";
 const root = new URL("./", import.meta.url);
 const canonicalManifestName = "stable.json";
 const canonicalSignatureName = "stable.json.sig";
-const backupManifestName = "stable-0.0.6-before-midnight-scale-150-20260822.json";
+const backupManifestName = "stable-0.0.6-before-visual-scale-225-offhand-20260822.json";
 const backupSignatureName = `${backupManifestName}.sig`;
 const oldObjects = [
   {
-    path: "mods/FoC-Midnight-Deal-1.12.0.jar",
-    hash: "baf564e644997e2832d80c1e48f264f77b060fe3af59d009fe9e643969c44072",
-  },
-];
-const expectedObjects = [
-  {
     path: "mods/FoC-Midnight-Deal-1.12.1.jar",
     hash: "b1e1e7b4ce2c5cd82d05d0b92bb8f1a4921c48efcc2f095b56790d3101858f4b",
-    size: 10184719,
   },
   {
     path: "mods/FoC-Paradoxica-1.1.3.jar",
     hash: "0552faaea1ed5701750088212d95f6bfeeccb475c77af673c8851d27a45e3925",
-    size: 250578,
+  },
+];
+const expectedObjects = [
+  {
+    path: "mods/FoC-Midnight-Deal-1.12.2.jar",
+    hash: "225fc7263a455775fb915a123599f9d0380a4051c417e45bfbe06cc54a090a4c",
+    size: 10174374,
+  },
+  {
+    path: "mods/FoC-Paradoxica-1.1.4.jar",
+    hash: "b0519bad25c22f103c6e99388798fa638f68ef71e874f136b9e81a18ea287831",
+    size: 244560,
   },
 ];
 
@@ -213,7 +217,7 @@ verifyPair(previousManifestBytes, previousSignatureBytes, "Current public manife
 if (sameBytes(previousManifestBytes, manifestBytes) && sameBytes(previousSignatureBytes, signatureBytes)) {
   phase = "idempotent-object-validation";
   for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
-  console.log("Integrated Paradoxica and Midnight Deal update is already published and verified.");
+  console.log("Paradoxica offhand and Midnight Deal 2.25x update is already published and verified.");
   process.exit(0);
 }
 
@@ -228,16 +232,8 @@ for (const old of oldObjects) {
     throw new Error(`Current public manifest does not contain the expected object: ${old.path}`);
   }
 }
-const retainedParadoxica = previousManifest.files.filter(
-  (file) =>
-    file.path === "mods/FoC-Paradoxica-1.1.3.jar" &&
-    file.sha256 === "0552faaea1ed5701750088212d95f6bfeeccb475c77af673c8851d27a45e3925",
-);
-if (retainedParadoxica.length !== 1) {
-  throw new Error("Current public manifest does not contain integrated Paradoxica 1.1.3.");
-}
 if (manifest.files.length !== previousManifest.files.length) {
-  throw new Error("Midnight scale update must replace exactly one file.");
+  throw new Error("Visual update must replace exactly two files.");
 }
 
 phase = "rollback-backup-upload";
@@ -247,8 +243,8 @@ phase = "content-object-upload";
 for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
 
 const suffix = (process.env.GITHUB_SHA ?? Date.now().toString()).slice(0, 12);
-const stageManifestName = `stable.json.next-midnight-150-${suffix}`;
-const stageSignatureName = `stable.json.sig.next-midnight-150-${suffix}`;
+const stageManifestName = `stable.json.next-visual-225-offhand-${suffix}`;
+const stageSignatureName = `stable.json.sig.next-visual-225-offhand-${suffix}`;
 phase = "staging-pair-upload";
 const stageManifest = await replaceStage(stageManifestName, manifestBytes);
 const stageSignature = await replaceStage(stageSignatureName, signatureBytes);
@@ -295,7 +291,7 @@ try {
   }
   if (!publicVerified) throw new Error("Anonymous public signed pair did not converge to the new bytes.");
 
-  console.log(`Published Midnight Deal 1.5x visual scale update: ${manifest.files.length} files.`);
+  console.log(`Published Paradoxica offhand and Midnight Deal 2.25x visual update: ${manifest.files.length} files.`);
   console.log(`Manifest SHA-256: ${sha256(manifestBytes)}`);
   console.log(`New objects: ${expectedObjects.map((entry) => entry.hash).join(", ")}`);
   console.log(`Old objects retained for rollback: ${oldObjects.map((entry) => entry.hash).join(", ")}`);

@@ -19,19 +19,32 @@ const tag = "client-0.0.3";
 const root = new URL("./", import.meta.url);
 const canonicalManifestName = "stable.json";
 const canonicalSignatureName = "stable.json.sig";
-const backupManifestName = "stable-0.0.6-before-paradoxica-hotfix-20260822.json";
+const backupManifestName = "stable-0.0.6-before-integrated-paradoxica-midnight-20260822.json";
 const backupSignatureName = `${backupManifestName}.sig`;
-const oldParadoxicaHash = "11f2803bae1384ec49a35eff48256ffa0729b8ceaf2deff56efc47b7b71fbf4f";
-const expectedObjects = [
+const oldObjects = [
+  {
+    path: "mods/FoC-Midnight-Deal-1.11.0.jar",
+    hash: "67511b310f685c16934d1dae2a90c53f95fa48241374bdade5b4c902404882b0",
+  },
   {
     path: "mods/FoC-Paradoxica-1.1.2.jar",
     hash: "15e1ae51be2b5b62f0c9f66908fde1e47971b90d0a53ab06b47ebd9387ad9be5",
-    size: 248157,
   },
   {
     path: "mods/FoC-Paradoxica-Sudden-Strike-Patch-1.0.1.jar",
     hash: "c6dbc7ca137bd8f93f8dbec1de4d9604d3c464a437fc787e59bb9a83dd1a70be",
-    size: 4910,
+  },
+];
+const expectedObjects = [
+  {
+    path: "mods/FoC-Midnight-Deal-1.12.0.jar",
+    hash: "baf564e644997e2832d80c1e48f264f77b060fe3af59d009fe9e643969c44072",
+    size: 10182612,
+  },
+  {
+    path: "mods/FoC-Paradoxica-1.1.3.jar",
+    hash: "0552faaea1ed5701750088212d95f6bfeeccb475c77af673c8851d27a45e3925",
+    size: 250578,
   },
 ];
 
@@ -59,11 +72,14 @@ function verifyPair(data, signature, label) {
 
 verifyPair(manifestBytes, signatureBytes, "Prepared manifest");
 if (manifest.clientVersion !== "0.0.6") throw new Error("Prepared clientVersion must remain 0.0.6.");
-if (!Array.isArray(manifest.files) || manifest.files.length !== 601) {
-  throw new Error("Prepared manifest must contain exactly 601 files.");
+if (!Array.isArray(manifest.files) || manifest.files.length !== 600) {
+  throw new Error("Prepared manifest must contain exactly 600 files.");
 }
-if (manifest.files.some((file) => file.path === "mods/FoC-Paradoxica-1.1.1.jar")) {
-  throw new Error("Prepared manifest still contains Paradoxica 1.1.1.");
+if (manifest.files.some((file) => oldObjects.some((old) => old.path === file.path))) {
+  throw new Error("Prepared manifest still contains superseded Paradoxica or Midnight Deal files.");
+}
+if (manifest.files.some((file) => file.path.startsWith("mods/FoC-Paradoxica-Sudden-Strike-Patch-"))) {
+  throw new Error("Prepared manifest still contains a separate Sudden Strike patch.");
 }
 
 const objectBytes = new Map();
@@ -205,22 +221,23 @@ verifyPair(previousManifestBytes, previousSignatureBytes, "Current public manife
 if (sameBytes(previousManifestBytes, manifestBytes) && sameBytes(previousSignatureBytes, signatureBytes)) {
   phase = "idempotent-object-validation";
   for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
-  console.log("Paradoxica hotfix is already published and verified.");
+  console.log("Integrated Paradoxica and Midnight Deal update is already published and verified.");
   process.exit(0);
 }
 
 const previousManifest = JSON.parse(previousManifestBytes.toString("utf8"));
 phase = "current-state-validation";
 if (previousManifest.clientVersion !== "0.0.6") throw new Error("Current public clientVersion is not 0.0.6.");
-const oldEntries = previousManifest.files.filter(
-  (file) => file.path === "mods/FoC-Paradoxica-1.1.1.jar" && file.sha256 === oldParadoxicaHash,
-);
-if (oldEntries.length !== 1) throw new Error("Current public manifest does not contain the expected Paradoxica 1.1.1 object.");
-if (previousManifest.files.some((file) => file.path.startsWith("mods/FoC-Paradoxica-Sudden-Strike-Patch-"))) {
-  throw new Error("Current public manifest already contains an unexpected Sudden Strike patch.");
+for (const old of oldObjects) {
+  const matches = previousManifest.files.filter(
+    (file) => file.path === old.path && file.sha256 === old.hash,
+  );
+  if (matches.length !== 1) {
+    throw new Error(`Current public manifest does not contain the expected object: ${old.path}`);
+  }
 }
-if (manifest.files.length !== previousManifest.files.length + 1) {
-  throw new Error("Hotfix must replace one file and add exactly one patch file.");
+if (manifest.files.length !== previousManifest.files.length - 1) {
+  throw new Error("Update must replace three files with two integrated files.");
 }
 
 phase = "rollback-backup-upload";
@@ -230,8 +247,8 @@ phase = "content-object-upload";
 for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
 
 const suffix = (process.env.GITHUB_SHA ?? Date.now().toString()).slice(0, 12);
-const stageManifestName = `stable.json.next-paradoxica-${suffix}`;
-const stageSignatureName = `stable.json.sig.next-paradoxica-${suffix}`;
+const stageManifestName = `stable.json.next-integrated-${suffix}`;
+const stageSignatureName = `stable.json.sig.next-integrated-${suffix}`;
 phase = "staging-pair-upload";
 const stageManifest = await replaceStage(stageManifestName, manifestBytes);
 const stageSignature = await replaceStage(stageSignatureName, signatureBytes);
@@ -278,10 +295,10 @@ try {
   }
   if (!publicVerified) throw new Error("Anonymous public signed pair did not converge to the new bytes.");
 
-  console.log(`Published client 0.0.6 hotfix: ${manifest.files.length} files.`);
+  console.log(`Published integrated client 0.0.6 update: ${manifest.files.length} files.`);
   console.log(`Manifest SHA-256: ${sha256(manifestBytes)}`);
   console.log(`New objects: ${expectedObjects.map((entry) => entry.hash).join(", ")}`);
-  console.log(`Old object retained for rollback: ${oldParadoxicaHash}`);
+  console.log(`Old objects retained for rollback: ${oldObjects.map((entry) => entry.hash).join(", ")}`);
 } catch (error) {
   if (switchStarted) {
     phase = "automatic-rollback";

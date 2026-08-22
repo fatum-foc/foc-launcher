@@ -2809,9 +2809,9 @@
       "mode": "managed"
     },
     {
-      "path": "mods/FoC-Midnight-Deal-1.11.0.jar",
-      "sha256": "67511b310f685c16934d1dae2a90c53f95fa48241374bdade5b4c902404882b0",
-      "size": 10182915,
+      "path": "mods/FoC-Midnight-Deal-1.12.0.jar",
+      "sha256": "baf564e644997e2832d80c1e48f264f77b060fe3af59d009fe9e643969c44072",
+      "size": 10182612,
       "mode": "managed"
     },
     {
@@ -2827,15 +2827,9 @@
       "mode": "managed"
     },
     {
-      "path": "mods/FoC-Paradoxica-1.1.2.jar",
-      "sha256": "15e1ae51be2b5b62f0c9f66908fde1e47971b90d0a53ab06b47ebd9387ad9be5",
-      "size": 248157,
-      "mode": "managed"
-    },
-    {
-      "path": "mods/FoC-Paradoxica-Sudden-Strike-Patch-1.0.1.jar",
-      "sha256": "c6dbc7ca137bd8f93f8dbec1de4d9604d3c464a437fc787e59bb9a83dd1a70be",
-      "size": 4910,
+      "path": "mods/FoC-Paradoxica-1.1.3.jar",
+      "sha256": "0552faaea1ed5701750088212d95f6bfeeccb475c77af673c8851d27a45e3925",
+      "size": 250578,
       "mode": "managed"
     },
     {

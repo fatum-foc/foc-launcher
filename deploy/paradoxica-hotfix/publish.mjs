@@ -19,7 +19,7 @@ const tag = "client-0.0.3";
 const root = new URL("./", import.meta.url);
 const canonicalManifestName = "stable.json";
 const canonicalSignatureName = "stable.json.sig";
-const backupManifestName = "stable-0.0.6-before-fishing-fixes-20260822.json";
+const backupManifestName = "stable-0.0.6-before-map-fishing-fixes-20260823.json";
 const backupSignatureName = `${backupManifestName}.sig`;
 const prerequisiteObjects = [
   {
@@ -34,16 +34,27 @@ const prerequisiteObjects = [
     path: "mods/FoC-Mausoleum-Guard-1.0.0.jar",
     hash: "a890ceb35a6007688c1025d514fa66a8b116cb1dfbefb16f050c9a7e1010dd22",
   },
+];
+const replacedObjects = [
   {
     path: "mods/FoC-Xaero-Nether-Layer-1.0.0.jar",
     hash: "f175dc5d39312155cfb4cf71613c04b4fc5b756f1c35d1183cc53f75d4755993",
   },
-];
-const expectedObjects = [
   {
     path: "mods/FoC-Fishing-Fixes-1.0.0.jar",
     hash: "374fbef6f1c1da27afeedd7da755c3b5d9469b8926a227a8bd1bdc8e031bb95f",
-    size: 12287,
+  },
+];
+const expectedObjects = [
+  {
+    path: "mods/FoC-Fishing-Fixes-1.1.0.jar",
+    hash: "07778bc4460583dd3d727c2671b2801d0643580be1d87328e237006f7419d88f",
+    size: 14458,
+  },
+  {
+    path: "mods/FoC-Xaero-Nether-Layer-1.1.0.jar",
+    hash: "128decf65872ab1c3a400728ffd840a3a3442ecea87afe172fcbaa1ca411b4b3",
+    size: 7197,
   },
 ];
 
@@ -85,6 +96,11 @@ for (const prerequisite of prerequisiteObjects) {
 if (manifest.files.some((file) => file.path.startsWith("mods/FoC-Paradoxica-Sudden-Strike-Patch-"))) {
   throw new Error("Prepared manifest still contains a separate Sudden Strike patch.");
 }
+for (const old of replacedObjects) {
+  if (manifest.files.some((file) => file.path === old.path)) {
+    throw new Error(`Prepared manifest still contains replaced object: ${old.path}`);
+  }
+}
 
 const objectBytes = new Map();
 for (const expected of expectedObjects) {
@@ -103,7 +119,7 @@ async function request(url, options = {}) {
   const headers = {
     Accept: "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "FoC-Fishing-Fixes-safe-publisher",
+    "User-Agent": "FoC-Map-Fishing-Fixes-safe-publisher",
     Authorization: `Bearer ${token}`,
     ...(options.headers ?? {}),
   };
@@ -225,15 +241,15 @@ verifyPair(previousManifestBytes, previousSignatureBytes, "Current public manife
 if (sameBytes(previousManifestBytes, manifestBytes) && sameBytes(previousSignatureBytes, signatureBytes)) {
   phase = "idempotent-object-validation";
   for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
-  console.log("FoC Fishing Fixes client update is already published and verified.");
+  console.log("FoC map and fishing fixes are already published and verified.");
   process.exit(0);
 }
 
 const previousManifest = JSON.parse(previousManifestBytes.toString("utf8"));
 phase = "current-state-validation";
 if (previousManifest.clientVersion !== "0.0.6") throw new Error("Current public clientVersion is not 0.0.6.");
-if (!Array.isArray(previousManifest.files) || previousManifest.files.length !== 602) {
-  throw new Error("Current public manifest must contain exactly 602 files.");
+if (!Array.isArray(previousManifest.files) || previousManifest.files.length !== 603) {
+  throw new Error("Current public manifest must contain exactly 603 files.");
 }
 for (const old of prerequisiteObjects) {
   const matches = previousManifest.files.filter(
@@ -243,11 +259,12 @@ for (const old of prerequisiteObjects) {
     throw new Error(`Current public manifest does not contain the expected object: ${old.path}`);
   }
 }
-if (previousManifest.files.some((file) => file.path.startsWith("mods/FoC-Fishing-Fixes-"))) {
-  throw new Error("Current public manifest already contains a FoC Fishing Fixes entry.");
+for (const old of replacedObjects) {
+  const matches = previousManifest.files.filter((file) => file.path === old.path && file.sha256 === old.hash);
+  if (matches.length !== 1) throw new Error(`Current public manifest is missing replaced object: ${old.path}`);
 }
-if (manifest.files.length !== previousManifest.files.length + 1) {
-  throw new Error("FoC Fishing Fixes update must add exactly one file.");
+if (manifest.files.length !== previousManifest.files.length) {
+  throw new Error("Map and fishing fixes must replace exactly two files without changing the file count.");
 }
 
 phase = "rollback-backup-upload";
@@ -257,8 +274,8 @@ phase = "content-object-upload";
 for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
 
 const suffix = (process.env.GITHUB_SHA ?? Date.now().toString()).slice(0, 12);
-const stageManifestName = `stable.json.next-fishing-fixes-${suffix}`;
-const stageSignatureName = `stable.json.sig.next-fishing-fixes-${suffix}`;
+const stageManifestName = `stable.json.next-map-fishing-fixes-${suffix}`;
+const stageSignatureName = `stable.json.sig.next-map-fishing-fixes-${suffix}`;
 phase = "staging-pair-upload";
 const stageManifest = await replaceStage(stageManifestName, manifestBytes);
 const stageSignature = await replaceStage(stageSignatureName, signatureBytes);
@@ -305,7 +322,7 @@ try {
   }
   if (!publicVerified) throw new Error("Anonymous public signed pair did not converge to the new bytes.");
 
-  console.log(`Published FoC Fishing Fixes client update: ${manifest.files.length} files.`);
+  console.log(`Published FoC map and fishing fixes: ${manifest.files.length} files.`);
   console.log(`Manifest SHA-256: ${sha256(manifestBytes)}`);
   console.log(`New objects: ${expectedObjects.map((entry) => entry.hash).join(", ")}`);
   console.log(`Prerequisite objects retained: ${prerequisiteObjects.map((entry) => entry.hash).join(", ")}`);

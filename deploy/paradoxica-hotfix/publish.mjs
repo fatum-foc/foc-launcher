@@ -1,6 +1,18 @@
 import { createHash, verify } from "node:crypto";
 import { readFile } from "node:fs/promises";
 
+let phase = "startup";
+let fatalReported = false;
+function reportFatal(error) {
+  if (fatalReported) return;
+  fatalReported = true;
+  console.error(`::error title=FoC publisher failure::phase=${phase}`);
+  console.error(error instanceof Error ? error.message : "Unknown publication failure.");
+  process.exit(1);
+}
+process.on("uncaughtException", reportFatal);
+process.on("unhandledRejection", reportFatal);
+
 const repository = process.env.GITHUB_REPOSITORY;
 const token = process.env.GITHUB_TOKEN;
 const tag = "client-0.0.3";
@@ -23,6 +35,7 @@ const expectedObjects = [
   },
 ];
 
+phase = "local-validation";
 if (!repository || !token) throw new Error("GitHub Actions authorization is unavailable.");
 
 const manifestBytes = await readFile(new URL("stable.json", root));
@@ -86,6 +99,7 @@ async function requestJson(url, options) {
   return (await request(url, options)).json();
 }
 
+phase = "release-read";
 const release = await requestJson(`https://api.github.com/repos/${repository}/releases/tags/${tag}`);
 const releaseId = release.id;
 
@@ -178,20 +192,25 @@ async function restore(previousManifestBytes, previousSignatureBytes) {
   verifyPair(restoredManifest, restoredSignature, "Restored manifest");
 }
 
+phase = "current-assets-list";
 let assets = await listAssets();
 const currentManifestAsset = getAsset(assets, canonicalManifestName);
 const currentSignatureAsset = getAsset(assets, canonicalSignatureName);
+phase = "current-pair-download";
 const previousManifestBytes = await downloadAsset(currentManifestAsset);
 const previousSignatureBytes = await downloadAsset(currentSignatureAsset);
+phase = "current-pair-validation";
 verifyPair(previousManifestBytes, previousSignatureBytes, "Current public manifest");
 
 if (sameBytes(previousManifestBytes, manifestBytes) && sameBytes(previousSignatureBytes, signatureBytes)) {
+  phase = "idempotent-object-validation";
   for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
   console.log("Paradoxica hotfix is already published and verified.");
   process.exit(0);
 }
 
 const previousManifest = JSON.parse(previousManifestBytes.toString("utf8"));
+phase = "current-state-validation";
 if (previousManifest.clientVersion !== "0.0.6") throw new Error("Current public clientVersion is not 0.0.6.");
 const oldEntries = previousManifest.files.filter(
   (file) => file.path === "mods/FoC-Paradoxica-1.1.1.jar" && file.sha256 === oldParadoxicaHash,
@@ -204,24 +223,29 @@ if (manifest.files.length !== previousManifest.files.length + 1) {
   throw new Error("Hotfix must replace one file and add exactly one patch file.");
 }
 
+phase = "rollback-backup-upload";
 await ensureImmutableAsset(backupManifestName, previousManifestBytes);
 await ensureImmutableAsset(backupSignatureName, previousSignatureBytes);
+phase = "content-object-upload";
 for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
 
 const suffix = (process.env.GITHUB_SHA ?? Date.now().toString()).slice(0, 12);
 const stageManifestName = `stable.json.next-paradoxica-${suffix}`;
 const stageSignatureName = `stable.json.sig.next-paradoxica-${suffix}`;
+phase = "staging-pair-upload";
 const stageManifest = await replaceStage(stageManifestName, manifestBytes);
 const stageSignature = await replaceStage(stageSignatureName, signatureBytes);
 
 let switchStarted = false;
 try {
+  phase = "canonical-pair-switch";
   switchStarted = true;
   await deleteAsset(currentSignatureAsset);
   await renameAsset(stageSignature, canonicalSignatureName);
   await deleteAsset(currentManifestAsset);
   await renameAsset(stageManifest, canonicalManifestName);
 
+  phase = "final-api-validation";
   assets = await listAssets();
   const finalManifest = await downloadAsset(getAsset(assets, canonicalManifestName));
   const finalSignature = await downloadAsset(getAsset(assets, canonicalSignatureName));
@@ -236,6 +260,7 @@ try {
     }
   }
 
+  phase = "anonymous-public-validation";
   let publicVerified = false;
   for (let attempt = 1; attempt <= 10; attempt += 1) {
     try {
@@ -259,6 +284,7 @@ try {
   console.log(`Old object retained for rollback: ${oldParadoxicaHash}`);
 } catch (error) {
   if (switchStarted) {
+    phase = "automatic-rollback";
     console.error("Publication verification failed; restoring the previous signed pair.");
     await restore(previousManifestBytes, previousSignatureBytes);
   }

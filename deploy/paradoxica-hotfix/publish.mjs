@@ -19,28 +19,23 @@ const tag = "client-0.0.3";
 const root = new URL("./", import.meta.url);
 const canonicalManifestName = "stable.json";
 const canonicalSignatureName = "stable.json.sig";
-const backupManifestName = "stable-0.0.6-before-visual-scale-225-offhand-20260822.json";
+const backupManifestName = "stable-0.0.6-before-mausoleum-guard-20260822.json";
 const backupSignatureName = `${backupManifestName}.sig`;
-const oldObjects = [
-  {
-    path: "mods/FoC-Midnight-Deal-1.12.1.jar",
-    hash: "b1e1e7b4ce2c5cd82d05d0b92bb8f1a4921c48efcc2f095b56790d3101858f4b",
-  },
-  {
-    path: "mods/FoC-Paradoxica-1.1.3.jar",
-    hash: "0552faaea1ed5701750088212d95f6bfeeccb475c77af673c8851d27a45e3925",
-  },
-];
-const expectedObjects = [
+const prerequisiteObjects = [
   {
     path: "mods/FoC-Midnight-Deal-1.12.2.jar",
     hash: "225fc7263a455775fb915a123599f9d0380a4051c417e45bfbe06cc54a090a4c",
-    size: 10174374,
   },
   {
     path: "mods/FoC-Paradoxica-1.1.4.jar",
     hash: "b0519bad25c22f103c6e99388798fa638f68ef71e874f136b9e81a18ea287831",
-    size: 244560,
+  },
+];
+const expectedObjects = [
+  {
+    path: "mods/FoC-Mausoleum-Guard-1.0.0.jar",
+    hash: "a890ceb35a6007688c1025d514fa66a8b116cb1dfbefb16f050c9a7e1010dd22",
+    size: 21185,
   },
 ];
 
@@ -68,11 +63,16 @@ function verifyPair(data, signature, label) {
 
 verifyPair(manifestBytes, signatureBytes, "Prepared manifest");
 if (manifest.clientVersion !== "0.0.6") throw new Error("Prepared clientVersion must remain 0.0.6.");
-if (!Array.isArray(manifest.files) || manifest.files.length !== 600) {
-  throw new Error("Prepared manifest must contain exactly 600 files.");
+if (!Array.isArray(manifest.files) || manifest.files.length !== 601) {
+  throw new Error("Prepared manifest must contain exactly 601 files.");
 }
-if (manifest.files.some((file) => oldObjects.some((old) => old.path === file.path))) {
-  throw new Error("Prepared manifest still contains superseded Paradoxica or Midnight Deal files.");
+for (const prerequisite of prerequisiteObjects) {
+  const matches = manifest.files.filter(
+    (file) => file.path === prerequisite.path && file.sha256 === prerequisite.hash,
+  );
+  if (matches.length !== 1) {
+    throw new Error(`Prepared manifest lost a required current object: ${prerequisite.path}`);
+  }
 }
 if (manifest.files.some((file) => file.path.startsWith("mods/FoC-Paradoxica-Sudden-Strike-Patch-"))) {
   throw new Error("Prepared manifest still contains a separate Sudden Strike patch.");
@@ -95,7 +95,7 @@ async function request(url, options = {}) {
   const headers = {
     Accept: "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "FoC-Paradoxica-safe-publisher",
+    "User-Agent": "FoC-Mausoleum-Guard-safe-publisher",
     Authorization: `Bearer ${token}`,
     ...(options.headers ?? {}),
   };
@@ -217,14 +217,17 @@ verifyPair(previousManifestBytes, previousSignatureBytes, "Current public manife
 if (sameBytes(previousManifestBytes, manifestBytes) && sameBytes(previousSignatureBytes, signatureBytes)) {
   phase = "idempotent-object-validation";
   for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
-  console.log("Paradoxica offhand and Midnight Deal 2.25x update is already published and verified.");
+  console.log("Mausoleum Guard client update is already published and verified.");
   process.exit(0);
 }
 
 const previousManifest = JSON.parse(previousManifestBytes.toString("utf8"));
 phase = "current-state-validation";
 if (previousManifest.clientVersion !== "0.0.6") throw new Error("Current public clientVersion is not 0.0.6.");
-for (const old of oldObjects) {
+if (!Array.isArray(previousManifest.files) || previousManifest.files.length !== 600) {
+  throw new Error("Current public manifest must contain exactly 600 files.");
+}
+for (const old of prerequisiteObjects) {
   const matches = previousManifest.files.filter(
     (file) => file.path === old.path && file.sha256 === old.hash,
   );
@@ -232,8 +235,11 @@ for (const old of oldObjects) {
     throw new Error(`Current public manifest does not contain the expected object: ${old.path}`);
   }
 }
-if (manifest.files.length !== previousManifest.files.length) {
-  throw new Error("Visual update must replace exactly two files.");
+if (previousManifest.files.some((file) => file.path.startsWith("mods/FoC-Mausoleum-Guard-"))) {
+  throw new Error("Current public manifest already contains a Mausoleum Guard entry.");
+}
+if (manifest.files.length !== previousManifest.files.length + 1) {
+  throw new Error("Mausoleum Guard update must add exactly one file.");
 }
 
 phase = "rollback-backup-upload";
@@ -243,8 +249,8 @@ phase = "content-object-upload";
 for (const expected of expectedObjects) await ensureImmutableAsset(expected.hash, objectBytes.get(expected.hash));
 
 const suffix = (process.env.GITHUB_SHA ?? Date.now().toString()).slice(0, 12);
-const stageManifestName = `stable.json.next-visual-225-offhand-${suffix}`;
-const stageSignatureName = `stable.json.sig.next-visual-225-offhand-${suffix}`;
+const stageManifestName = `stable.json.next-mausoleum-guard-${suffix}`;
+const stageSignatureName = `stable.json.sig.next-mausoleum-guard-${suffix}`;
 phase = "staging-pair-upload";
 const stageManifest = await replaceStage(stageManifestName, manifestBytes);
 const stageSignature = await replaceStage(stageSignatureName, signatureBytes);
@@ -291,10 +297,10 @@ try {
   }
   if (!publicVerified) throw new Error("Anonymous public signed pair did not converge to the new bytes.");
 
-  console.log(`Published Paradoxica offhand and Midnight Deal 2.25x visual update: ${manifest.files.length} files.`);
+  console.log(`Published Mausoleum Guard client update: ${manifest.files.length} files.`);
   console.log(`Manifest SHA-256: ${sha256(manifestBytes)}`);
   console.log(`New objects: ${expectedObjects.map((entry) => entry.hash).join(", ")}`);
-  console.log(`Old objects retained for rollback: ${oldObjects.map((entry) => entry.hash).join(", ")}`);
+  console.log(`Prerequisite objects retained: ${prerequisiteObjects.map((entry) => entry.hash).join(", ")}`);
 } catch (error) {
   if (switchStarted) {
     phase = "automatic-rollback";

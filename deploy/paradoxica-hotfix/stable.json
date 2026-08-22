@@ -2809,6 +2809,12 @@
       "mode": "managed"
     },
     {
+      "path": "mods/FoC-Mausoleum-Guard-1.0.0.jar",
+      "sha256": "a890ceb35a6007688c1025d514fa66a8b116cb1dfbefb16f050c9a7e1010dd22",
+      "size": 21185,
+      "mode": "managed"
+    },
+    {
       "path": "mods/FoC-Midnight-Deal-1.12.2.jar",
       "sha256": "225fc7263a455775fb915a123599f9d0380a4051c417e45bfbe06cc54a090a4c",
       "size": 10174374,

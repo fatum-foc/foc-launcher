@@ -21,7 +21,7 @@ const canonicalManifestName = "stable.json";
 const canonicalSignatureName = "stable.json.sig";
 const backupManifestName = "stable-0.0.6-before-paradoxica-hotfix-20260822.json";
 const backupSignatureName = `${backupManifestName}.sig`;
-const oldParadoxicaHash = "11f2803d5b2b21af8b2904096001498576e4b904992923361e60add14471448e";
+const oldParadoxicaHash = "11f2803bae1384ec49a35eff48256ffa0729b8ceaf2deff56efc47b7b71fbf4f";
 const expectedObjects = [
   {
     path: "mods/FoC-Paradoxica-1.1.2.jar",
